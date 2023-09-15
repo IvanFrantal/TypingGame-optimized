@@ -3,6 +3,5 @@ Ideje za update:
 Proširivanje funkcionalnosti igre
   - Nakon skupljenih 50 bodova da se jedan obrisani
     kvadratic vrati nazad i tako za svakih novo
-    skupljenih 50 bodova (to bi mozda mogao biti
-    baby difficulty)
+    skupljenih 50 bodova
   - ...
