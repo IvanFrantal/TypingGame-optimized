@@ -1,0 +1,6957 @@
+function Main.initStaticVars 0
+push constant 0
+pop static 10
+push constant 0
+pop static 11
+push constant 0
+not
+pop static 23
+push constant 90
+call Random.randRange65 1
+pop static 1
+push constant 0
+pop static 24
+push constant 1
+pop static 14
+push constant 90
+call Random.randRange65 1
+pop static 2
+push constant 0
+pop static 25
+push constant 1
+pop static 15
+push constant 90
+call Random.randRange65 1
+pop static 3
+push constant 0
+pop static 26
+push constant 1
+pop static 16
+push constant 90
+call Random.randRange65 1
+pop static 4
+push constant 0
+pop static 27
+push constant 1
+pop static 17
+push constant 90
+call Random.randRange65 1
+pop static 5
+push constant 0
+pop static 28
+push constant 1
+pop static 18
+push constant 90
+call Random.randRange65 1
+pop static 6
+push constant 0
+pop static 29
+push constant 1
+pop static 19
+push constant 90
+call Random.randRange65 1
+pop static 7
+push constant 0
+pop static 30
+push constant 1
+pop static 20
+push constant 90
+call Random.randRange65 1
+pop static 8
+push constant 0
+pop static 31
+push constant 1
+pop static 21
+push constant 90
+call Random.randRange65 1
+pop static 9
+push constant 0
+pop static 32
+push constant 1
+pop static 22
+push constant 9
+call Array.new 1
+pop static 33
+push constant 0
+push static 33
+add
+push static 1
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+push static 33
+add
+push static 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 2
+push static 33
+add
+push static 3
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 3
+push static 33
+add
+push static 4
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 4
+push static 33
+add
+push static 5
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 5
+push static 33
+add
+push static 6
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 6
+push static 33
+add
+push static 7
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 7
+push static 33
+add
+push static 8
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 8
+push static 33
+add
+push static 9
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 0
+pop static 34
+push constant 0
+pop static 35
+push constant 0
+pop static 36
+push constant 0
+pop static 37
+push constant 0
+pop static 38
+push constant 0
+pop static 39
+push constant 0
+pop static 40
+push constant 0
+pop static 41
+push constant 0
+pop static 42
+push constant 0
+return
+function Main.printScore 0
+push constant 1
+push constant 2
+call Output.moveCursor 2
+pop temp 0
+push constant 7
+call String.new 1
+push constant 83
+call String.appendChar 2
+push constant 99
+call String.appendChar 2
+push constant 111
+call String.appendChar 2
+push constant 114
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 58
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+call Output.printString 1
+pop temp 0
+push static 10
+call Output.printInt 1
+pop temp 0
+push constant 0
+return
+function Main.printUI 0
+push constant 0
+push constant 0
+push constant 132
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 377
+push constant 0
+push constant 511
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 2
+push constant 2
+call Output.moveCursor 2
+pop temp 0
+push static 13
+push constant 1
+eq
+if-goto IF_TRUE0
+goto IF_FALSE0
+label IF_TRUE0
+push constant 10
+call String.new 1
+push constant 68
+call String.appendChar 2
+push constant 105
+call String.appendChar 2
+push constant 102
+call String.appendChar 2
+push constant 102
+call String.appendChar 2
+push constant 58
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 69
+call String.appendChar 2
+push constant 97
+call String.appendChar 2
+push constant 115
+call String.appendChar 2
+push constant 121
+call String.appendChar 2
+call Output.printString 1
+pop temp 0
+label IF_FALSE0
+push static 13
+push constant 2
+eq
+if-goto IF_TRUE1
+goto IF_FALSE1
+label IF_TRUE1
+push constant 12
+call String.new 1
+push constant 68
+call String.appendChar 2
+push constant 105
+call String.appendChar 2
+push constant 102
+call String.appendChar 2
+push constant 102
+call String.appendChar 2
+push constant 58
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 77
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 100
+call String.appendChar 2
+push constant 105
+call String.appendChar 2
+push constant 117
+call String.appendChar 2
+push constant 109
+call String.appendChar 2
+call Output.printString 1
+pop temp 0
+label IF_FALSE1
+push static 13
+push constant 3
+eq
+if-goto IF_TRUE2
+goto IF_FALSE2
+label IF_TRUE2
+push constant 10
+call String.new 1
+push constant 68
+call String.appendChar 2
+push constant 105
+call String.appendChar 2
+push constant 102
+call String.appendChar 2
+push constant 102
+call String.appendChar 2
+push constant 58
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 72
+call String.appendChar 2
+push constant 97
+call String.appendChar 2
+push constant 114
+call String.appendChar 2
+push constant 100
+call String.appendChar 2
+call Output.printString 1
+pop temp 0
+label IF_FALSE2
+push static 13
+push constant 4
+eq
+if-goto IF_TRUE3
+goto IF_FALSE3
+label IF_TRUE3
+push constant 14
+call String.new 1
+push constant 68
+call String.appendChar 2
+push constant 105
+call String.appendChar 2
+push constant 102
+call String.appendChar 2
+push constant 102
+call String.appendChar 2
+push constant 58
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 78
+call String.appendChar 2
+push constant 73
+call String.appendChar 2
+push constant 71
+call String.appendChar 2
+push constant 72
+call String.appendChar 2
+push constant 77
+call String.appendChar 2
+push constant 65
+call String.appendChar 2
+push constant 82
+call String.appendChar 2
+push constant 69
+call String.appendChar 2
+call Output.printString 1
+pop temp 0
+label IF_FALSE3
+push constant 19
+push constant 52
+call Output.moveCursor 2
+pop temp 0
+push constant 8
+call String.new 1
+push constant 32
+call String.appendChar 2
+push constant 84
+call String.appendChar 2
+push constant 89
+call String.appendChar 2
+push constant 80
+call String.appendChar 2
+push constant 73
+call String.appendChar 2
+push constant 78
+call String.appendChar 2
+push constant 71
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+call Output.printString 1
+pop temp 0
+push constant 20
+push constant 52
+call Output.moveCursor 2
+pop temp 0
+push constant 8
+call String.new 1
+push constant 32
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 71
+call String.appendChar 2
+push constant 65
+call String.appendChar 2
+push constant 77
+call String.appendChar 2
+push constant 69
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+call Output.printString 1
+pop temp 0
+push constant 0
+return
+function Main.padSlova1stup 0
+push static 14
+push constant 20
+gt
+if-goto IF_TRUE0
+goto IF_FALSE0
+label IF_TRUE0
+push constant 0
+pop static 23
+label IF_FALSE0
+push static 14
+push constant 18
+call Output.moveCursor 2
+pop temp 0
+push argument 0
+call Output.printChar 1
+pop temp 0
+push static 14
+push constant 1
+sub
+push constant 18
+call Output.moveCursor 2
+pop temp 0
+push constant 32
+call Output.printChar 1
+pop temp 0
+call Keyboard.keyPressed 0
+push argument 0
+eq
+if-goto IF_TRUE1
+goto IF_FALSE1
+label IF_TRUE1
+push static 14
+push constant 18
+call Output.moveCursor 2
+pop temp 0
+push constant 32
+call Output.printChar 1
+pop temp 0
+push constant 90
+call Random.randRange65 1
+pop static 1
+push constant 0
+push static 33
+add
+push static 1
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+pop static 14
+push static 10
+push constant 1
+add
+pop static 10
+call Main.printScore 0
+pop temp 0
+label IF_FALSE1
+push static 13
+push constant 1
+eq
+if-goto IF_TRUE2
+goto IF_FALSE2
+label IF_TRUE2
+push static 14
+push constant 18
+eq
+push static 34
+not
+and
+if-goto IF_TRUE3
+goto IF_FALSE3
+label IF_TRUE3
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 134
+push constant 203
+push constant 159
+push constant 228
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push constant 134
+push constant 203
+push constant 159
+push constant 228
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 134
+push constant 203
+push constant 159
+push constant 228
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push constant 134
+push constant 203
+push constant 159
+push constant 228
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 134
+push constant 203
+push constant 159
+push constant 228
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push constant 134
+push constant 203
+push constant 159
+push constant 228
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 134
+push constant 203
+push constant 159
+push constant 228
+call Screen.drawRectangle 4
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push static 14
+push constant 18
+call Output.moveCursor 2
+pop temp 0
+push constant 32
+call Output.printChar 1
+pop temp 0
+push constant 90
+call Random.randRange65 1
+pop static 1
+push constant 0
+push static 33
+add
+push static 1
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+pop static 14
+push constant 0
+not
+pop static 34
+label IF_FALSE3
+push static 14
+push constant 20
+eq
+push static 24
+not
+and
+if-goto IF_TRUE4
+goto IF_FALSE4
+label IF_TRUE4
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 134
+push constant 230
+push constant 159
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push constant 134
+push constant 230
+push constant 159
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 134
+push constant 230
+push constant 159
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push constant 134
+push constant 230
+push constant 159
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 134
+push constant 230
+push constant 159
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push constant 134
+push constant 230
+push constant 159
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 134
+push constant 230
+push constant 159
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push static 14
+push constant 18
+call Output.moveCursor 2
+pop temp 0
+push constant 32
+call Output.printChar 1
+pop temp 0
+push constant 90
+call Random.randRange65 1
+pop static 1
+push constant 0
+push static 33
+add
+push static 1
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+pop static 14
+push constant 0
+not
+pop static 24
+label IF_FALSE4
+push static 24
+not
+if-goto IF_TRUE5
+goto IF_FALSE5
+label IF_TRUE5
+push constant 134
+push constant 230
+push constant 159
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+label IF_FALSE5
+push static 34
+not
+if-goto IF_TRUE6
+goto IF_FALSE6
+label IF_TRUE6
+push constant 134
+push constant 203
+push constant 159
+push constant 228
+call Screen.drawRectangle 4
+pop temp 0
+label IF_FALSE6
+label IF_FALSE2
+push static 13
+push constant 2
+eq
+if-goto IF_TRUE7
+goto IF_FALSE7
+label IF_TRUE7
+push static 14
+push constant 20
+eq
+push static 24
+not
+and
+if-goto IF_TRUE8
+goto IF_FALSE8
+label IF_TRUE8
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 134
+push constant 230
+push constant 159
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push constant 134
+push constant 230
+push constant 159
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 134
+push constant 230
+push constant 159
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push constant 134
+push constant 230
+push constant 159
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 134
+push constant 230
+push constant 159
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push constant 134
+push constant 230
+push constant 159
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 134
+push constant 230
+push constant 159
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push static 14
+push constant 18
+call Output.moveCursor 2
+pop temp 0
+push constant 32
+call Output.printChar 1
+pop temp 0
+push constant 90
+call Random.randRange65 1
+pop static 1
+push constant 0
+push static 33
+add
+push static 1
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+pop static 14
+push constant 0
+not
+pop static 24
+label IF_FALSE8
+push static 24
+not
+if-goto IF_TRUE9
+goto IF_FALSE9
+label IF_TRUE9
+push constant 134
+push constant 230
+push constant 159
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+label IF_FALSE9
+label IF_FALSE7
+push static 14
+push constant 1
+add
+pop static 14
+push static 12
+push constant 3
+lt
+if-goto IF_TRUE10
+goto IF_FALSE10
+label IF_TRUE10
+push constant 50
+pop static 12
+label IF_FALSE10
+push static 10
+push constant 50
+gt
+if-goto IF_TRUE11
+goto IF_FALSE11
+label IF_TRUE11
+push static 12
+push constant 1
+sub
+pop static 12
+label IF_FALSE11
+push constant 0
+return
+function Main.padSlova2stup 0
+push static 15
+push constant 20
+gt
+if-goto IF_TRUE0
+goto IF_FALSE0
+label IF_TRUE0
+push constant 0
+pop static 23
+label IF_FALSE0
+push static 15
+push constant 21
+call Output.moveCursor 2
+pop temp 0
+push argument 0
+call Output.printChar 1
+pop temp 0
+push static 15
+push constant 1
+sub
+push constant 21
+call Output.moveCursor 2
+pop temp 0
+push constant 32
+call Output.printChar 1
+pop temp 0
+call Keyboard.keyPressed 0
+push argument 0
+eq
+if-goto IF_TRUE1
+goto IF_FALSE1
+label IF_TRUE1
+push static 15
+push constant 21
+call Output.moveCursor 2
+pop temp 0
+push constant 32
+call Output.printChar 1
+pop temp 0
+push constant 90
+call Random.randRange65 1
+pop static 2
+push constant 1
+push static 33
+add
+push static 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+pop static 15
+push static 10
+push constant 1
+add
+pop static 10
+call Main.printScore 0
+pop temp 0
+label IF_FALSE1
+push static 13
+push constant 1
+eq
+if-goto IF_TRUE2
+goto IF_FALSE2
+label IF_TRUE2
+push static 15
+push constant 18
+eq
+push static 35
+not
+and
+if-goto IF_TRUE3
+goto IF_FALSE3
+label IF_TRUE3
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 161
+push constant 203
+push constant 186
+push constant 228
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push constant 161
+push constant 203
+push constant 186
+push constant 228
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 161
+push constant 203
+push constant 186
+push constant 228
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push constant 161
+push constant 203
+push constant 186
+push constant 228
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 161
+push constant 203
+push constant 186
+push constant 228
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push constant 161
+push constant 203
+push constant 186
+push constant 228
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 161
+push constant 203
+push constant 186
+push constant 228
+call Screen.drawRectangle 4
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push static 15
+push constant 21
+call Output.moveCursor 2
+pop temp 0
+push constant 32
+call Output.printChar 1
+pop temp 0
+push constant 90
+call Random.randRange65 1
+pop static 2
+push constant 1
+push static 33
+add
+push static 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+pop static 15
+push constant 0
+not
+pop static 35
+label IF_FALSE3
+push static 15
+push constant 20
+eq
+push static 25
+not
+and
+if-goto IF_TRUE4
+goto IF_FALSE4
+label IF_TRUE4
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 161
+push constant 230
+push constant 186
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push constant 161
+push constant 230
+push constant 186
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 161
+push constant 230
+push constant 186
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push constant 161
+push constant 230
+push constant 186
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 161
+push constant 230
+push constant 186
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push constant 161
+push constant 230
+push constant 186
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 161
+push constant 230
+push constant 186
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push static 15
+push constant 21
+call Output.moveCursor 2
+pop temp 0
+push constant 32
+call Output.printChar 1
+pop temp 0
+push constant 90
+call Random.randRange65 1
+pop static 2
+push constant 1
+push static 33
+add
+push static 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+pop static 15
+push constant 0
+not
+pop static 25
+label IF_FALSE4
+push static 25
+not
+if-goto IF_TRUE5
+goto IF_FALSE5
+label IF_TRUE5
+push constant 161
+push constant 230
+push constant 186
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+label IF_FALSE5
+push static 35
+not
+if-goto IF_TRUE6
+goto IF_FALSE6
+label IF_TRUE6
+push constant 161
+push constant 203
+push constant 186
+push constant 228
+call Screen.drawRectangle 4
+pop temp 0
+label IF_FALSE6
+label IF_FALSE2
+push static 13
+push constant 2
+eq
+if-goto IF_TRUE7
+goto IF_FALSE7
+label IF_TRUE7
+push static 15
+push constant 20
+eq
+push static 25
+not
+and
+if-goto IF_TRUE8
+goto IF_FALSE8
+label IF_TRUE8
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 161
+push constant 230
+push constant 186
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push constant 161
+push constant 230
+push constant 186
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 161
+push constant 230
+push constant 186
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push constant 161
+push constant 230
+push constant 186
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 161
+push constant 230
+push constant 186
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push constant 161
+push constant 230
+push constant 186
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 161
+push constant 230
+push constant 186
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push static 15
+push constant 21
+call Output.moveCursor 2
+pop temp 0
+push constant 32
+call Output.printChar 1
+pop temp 0
+push constant 90
+call Random.randRange65 1
+pop static 2
+push constant 1
+push static 33
+add
+push static 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+pop static 15
+push constant 0
+not
+pop static 25
+label IF_FALSE8
+push static 25
+not
+if-goto IF_TRUE9
+goto IF_FALSE9
+label IF_TRUE9
+push constant 161
+push constant 230
+push constant 186
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+label IF_FALSE9
+label IF_FALSE7
+push static 15
+push constant 1
+add
+pop static 15
+push static 12
+push constant 3
+lt
+if-goto IF_TRUE10
+goto IF_FALSE10
+label IF_TRUE10
+push constant 50
+pop static 12
+label IF_FALSE10
+push static 10
+push constant 100
+gt
+if-goto IF_TRUE11
+goto IF_FALSE11
+label IF_TRUE11
+push static 12
+push constant 1
+sub
+pop static 12
+label IF_FALSE11
+push constant 0
+return
+function Main.padSlova3stup 0
+push static 16
+push constant 20
+gt
+if-goto IF_TRUE0
+goto IF_FALSE0
+label IF_TRUE0
+push constant 0
+pop static 23
+label IF_FALSE0
+push static 16
+push constant 25
+call Output.moveCursor 2
+pop temp 0
+push argument 0
+call Output.printChar 1
+pop temp 0
+push static 16
+push constant 1
+sub
+push constant 25
+call Output.moveCursor 2
+pop temp 0
+push constant 32
+call Output.printChar 1
+pop temp 0
+call Keyboard.keyPressed 0
+push argument 0
+eq
+if-goto IF_TRUE1
+goto IF_FALSE1
+label IF_TRUE1
+push static 16
+push constant 25
+call Output.moveCursor 2
+pop temp 0
+push constant 32
+call Output.printChar 1
+pop temp 0
+push constant 90
+call Random.randRange65 1
+pop static 3
+push constant 2
+push static 33
+add
+push static 3
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+pop static 16
+push static 10
+push constant 1
+add
+pop static 10
+call Main.printScore 0
+pop temp 0
+label IF_FALSE1
+push static 13
+push constant 1
+eq
+if-goto IF_TRUE2
+goto IF_FALSE2
+label IF_TRUE2
+push static 16
+push constant 18
+eq
+push static 36
+not
+and
+if-goto IF_TRUE3
+goto IF_FALSE3
+label IF_TRUE3
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 188
+push constant 203
+push constant 213
+push constant 228
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push constant 188
+push constant 203
+push constant 213
+push constant 228
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 188
+push constant 203
+push constant 213
+push constant 228
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push constant 188
+push constant 203
+push constant 213
+push constant 228
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 188
+push constant 203
+push constant 213
+push constant 228
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push constant 188
+push constant 203
+push constant 213
+push constant 228
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 188
+push constant 203
+push constant 213
+push constant 228
+call Screen.drawRectangle 4
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push static 16
+push constant 25
+call Output.moveCursor 2
+pop temp 0
+push constant 32
+call Output.printChar 1
+pop temp 0
+push constant 90
+call Random.randRange65 1
+pop static 3
+push constant 2
+push static 33
+add
+push static 3
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+pop static 16
+push constant 0
+not
+pop static 36
+label IF_FALSE3
+push static 16
+push constant 20
+eq
+push static 26
+not
+and
+if-goto IF_TRUE4
+goto IF_FALSE4
+label IF_TRUE4
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 188
+push constant 230
+push constant 213
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push constant 188
+push constant 230
+push constant 213
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 188
+push constant 230
+push constant 213
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push constant 188
+push constant 230
+push constant 213
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 188
+push constant 230
+push constant 213
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push constant 188
+push constant 230
+push constant 213
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 188
+push constant 230
+push constant 213
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push static 16
+push constant 25
+call Output.moveCursor 2
+pop temp 0
+push constant 32
+call Output.printChar 1
+pop temp 0
+push constant 90
+call Random.randRange65 1
+pop static 3
+push constant 2
+push static 33
+add
+push static 3
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+pop static 16
+push constant 0
+not
+pop static 26
+label IF_FALSE4
+push static 26
+not
+if-goto IF_TRUE5
+goto IF_FALSE5
+label IF_TRUE5
+push constant 188
+push constant 230
+push constant 213
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+label IF_FALSE5
+push static 36
+not
+if-goto IF_TRUE6
+goto IF_FALSE6
+label IF_TRUE6
+push constant 188
+push constant 203
+push constant 213
+push constant 228
+call Screen.drawRectangle 4
+pop temp 0
+label IF_FALSE6
+label IF_FALSE2
+push static 13
+push constant 2
+eq
+if-goto IF_TRUE7
+goto IF_FALSE7
+label IF_TRUE7
+push static 16
+push constant 20
+eq
+push static 26
+not
+and
+if-goto IF_TRUE8
+goto IF_FALSE8
+label IF_TRUE8
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 188
+push constant 230
+push constant 213
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push constant 188
+push constant 230
+push constant 213
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 188
+push constant 230
+push constant 213
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push constant 188
+push constant 230
+push constant 213
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 188
+push constant 230
+push constant 213
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push constant 188
+push constant 230
+push constant 213
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 188
+push constant 230
+push constant 213
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push static 16
+push constant 25
+call Output.moveCursor 2
+pop temp 0
+push constant 32
+call Output.printChar 1
+pop temp 0
+push constant 90
+call Random.randRange65 1
+pop static 3
+push constant 2
+push static 33
+add
+push static 3
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+pop static 16
+push constant 0
+not
+pop static 26
+label IF_FALSE8
+push static 26
+not
+if-goto IF_TRUE9
+goto IF_FALSE9
+label IF_TRUE9
+push constant 188
+push constant 230
+push constant 213
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+label IF_FALSE9
+label IF_FALSE7
+push static 16
+push constant 1
+add
+pop static 16
+push static 12
+push constant 3
+lt
+if-goto IF_TRUE10
+goto IF_FALSE10
+label IF_TRUE10
+push constant 50
+pop static 12
+label IF_FALSE10
+push static 10
+push constant 150
+gt
+if-goto IF_TRUE11
+goto IF_FALSE11
+label IF_TRUE11
+push static 12
+push constant 1
+sub
+pop static 12
+label IF_FALSE11
+push constant 0
+return
+function Main.padSlova4stup 0
+push static 17
+push constant 20
+gt
+if-goto IF_TRUE0
+goto IF_FALSE0
+label IF_TRUE0
+push constant 0
+pop static 23
+label IF_FALSE0
+push static 17
+push constant 28
+call Output.moveCursor 2
+pop temp 0
+push argument 0
+call Output.printChar 1
+pop temp 0
+push static 17
+push constant 1
+sub
+push constant 28
+call Output.moveCursor 2
+pop temp 0
+push constant 32
+call Output.printChar 1
+pop temp 0
+call Keyboard.keyPressed 0
+push argument 0
+eq
+if-goto IF_TRUE1
+goto IF_FALSE1
+label IF_TRUE1
+push static 17
+push constant 28
+call Output.moveCursor 2
+pop temp 0
+push constant 32
+call Output.printChar 1
+pop temp 0
+push constant 90
+call Random.randRange65 1
+pop static 4
+push constant 3
+push static 33
+add
+push static 4
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+pop static 17
+push static 10
+push constant 1
+add
+pop static 10
+call Main.printScore 0
+pop temp 0
+label IF_FALSE1
+push static 13
+push constant 1
+eq
+if-goto IF_TRUE2
+goto IF_FALSE2
+label IF_TRUE2
+push static 17
+push constant 18
+eq
+push static 37
+not
+and
+if-goto IF_TRUE3
+goto IF_FALSE3
+label IF_TRUE3
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 215
+push constant 203
+push constant 240
+push constant 228
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push constant 215
+push constant 203
+push constant 240
+push constant 228
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 215
+push constant 203
+push constant 240
+push constant 228
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push constant 215
+push constant 203
+push constant 240
+push constant 228
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 215
+push constant 203
+push constant 240
+push constant 228
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push constant 215
+push constant 203
+push constant 240
+push constant 228
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 215
+push constant 203
+push constant 240
+push constant 228
+call Screen.drawRectangle 4
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push static 17
+push constant 28
+call Output.moveCursor 2
+pop temp 0
+push constant 32
+call Output.printChar 1
+pop temp 0
+push constant 90
+call Random.randRange65 1
+pop static 4
+push constant 3
+push static 33
+add
+push static 4
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+pop static 17
+push constant 0
+not
+pop static 37
+label IF_FALSE3
+push static 17
+push constant 20
+eq
+push static 27
+not
+and
+if-goto IF_TRUE4
+goto IF_FALSE4
+label IF_TRUE4
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 215
+push constant 230
+push constant 240
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push constant 215
+push constant 230
+push constant 240
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 215
+push constant 230
+push constant 240
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push constant 215
+push constant 230
+push constant 240
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 215
+push constant 230
+push constant 240
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push constant 215
+push constant 230
+push constant 240
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 215
+push constant 230
+push constant 240
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push static 17
+push constant 28
+call Output.moveCursor 2
+pop temp 0
+push constant 32
+call Output.printChar 1
+pop temp 0
+push constant 90
+call Random.randRange65 1
+pop static 4
+push constant 3
+push static 33
+add
+push static 4
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+pop static 17
+push constant 0
+not
+pop static 27
+label IF_FALSE4
+push static 27
+not
+if-goto IF_TRUE5
+goto IF_FALSE5
+label IF_TRUE5
+push constant 215
+push constant 230
+push constant 240
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+label IF_FALSE5
+push static 37
+not
+if-goto IF_TRUE6
+goto IF_FALSE6
+label IF_TRUE6
+push constant 215
+push constant 203
+push constant 240
+push constant 228
+call Screen.drawRectangle 4
+pop temp 0
+label IF_FALSE6
+label IF_FALSE2
+push static 13
+push constant 2
+eq
+if-goto IF_TRUE7
+goto IF_FALSE7
+label IF_TRUE7
+push static 17
+push constant 20
+eq
+push static 27
+not
+and
+if-goto IF_TRUE8
+goto IF_FALSE8
+label IF_TRUE8
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 215
+push constant 230
+push constant 240
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push constant 215
+push constant 230
+push constant 240
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 215
+push constant 230
+push constant 240
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push constant 215
+push constant 230
+push constant 240
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 215
+push constant 230
+push constant 240
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push constant 215
+push constant 230
+push constant 240
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 215
+push constant 230
+push constant 240
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push static 17
+push constant 28
+call Output.moveCursor 2
+pop temp 0
+push constant 32
+call Output.printChar 1
+pop temp 0
+push constant 90
+call Random.randRange65 1
+pop static 4
+push constant 3
+push static 33
+add
+push static 4
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+pop static 17
+push constant 0
+not
+pop static 27
+label IF_FALSE8
+push static 27
+not
+if-goto IF_TRUE9
+goto IF_FALSE9
+label IF_TRUE9
+push constant 215
+push constant 230
+push constant 240
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+label IF_FALSE9
+label IF_FALSE7
+push static 17
+push constant 1
+add
+pop static 17
+push static 12
+push constant 3
+lt
+if-goto IF_TRUE10
+goto IF_FALSE10
+label IF_TRUE10
+push constant 50
+pop static 12
+label IF_FALSE10
+push static 10
+push constant 200
+gt
+if-goto IF_TRUE11
+goto IF_FALSE11
+label IF_TRUE11
+push static 12
+push constant 1
+sub
+pop static 12
+label IF_FALSE11
+push constant 0
+return
+function Main.padSlova5stup 0
+push static 18
+push constant 20
+gt
+if-goto IF_TRUE0
+goto IF_FALSE0
+label IF_TRUE0
+push constant 0
+pop static 23
+label IF_FALSE0
+push static 18
+push constant 31
+call Output.moveCursor 2
+pop temp 0
+push argument 0
+call Output.printChar 1
+pop temp 0
+push static 18
+push constant 1
+sub
+push constant 31
+call Output.moveCursor 2
+pop temp 0
+push constant 32
+call Output.printChar 1
+pop temp 0
+call Keyboard.keyPressed 0
+push argument 0
+eq
+if-goto IF_TRUE1
+goto IF_FALSE1
+label IF_TRUE1
+push static 18
+push constant 31
+call Output.moveCursor 2
+pop temp 0
+push constant 32
+call Output.printChar 1
+pop temp 0
+push constant 90
+call Random.randRange65 1
+pop static 5
+push constant 4
+push static 33
+add
+push static 5
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+pop static 18
+push static 10
+push constant 1
+add
+pop static 10
+call Main.printScore 0
+pop temp 0
+label IF_FALSE1
+push static 13
+push constant 1
+eq
+if-goto IF_TRUE2
+goto IF_FALSE2
+label IF_TRUE2
+push static 18
+push constant 18
+eq
+push static 38
+not
+and
+if-goto IF_TRUE3
+goto IF_FALSE3
+label IF_TRUE3
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 242
+push constant 203
+push constant 267
+push constant 228
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push constant 242
+push constant 203
+push constant 267
+push constant 228
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 242
+push constant 203
+push constant 267
+push constant 228
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push constant 242
+push constant 203
+push constant 267
+push constant 228
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 242
+push constant 203
+push constant 267
+push constant 228
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push constant 242
+push constant 203
+push constant 267
+push constant 228
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 242
+push constant 203
+push constant 267
+push constant 228
+call Screen.drawRectangle 4
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push static 18
+push constant 31
+call Output.moveCursor 2
+pop temp 0
+push constant 32
+call Output.printChar 1
+pop temp 0
+push constant 90
+call Random.randRange65 1
+pop static 5
+push constant 4
+push static 33
+add
+push static 5
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+pop static 18
+push constant 0
+not
+pop static 38
+label IF_FALSE3
+push static 18
+push constant 20
+eq
+push static 28
+not
+and
+if-goto IF_TRUE4
+goto IF_FALSE4
+label IF_TRUE4
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 242
+push constant 230
+push constant 267
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push constant 242
+push constant 230
+push constant 267
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 242
+push constant 230
+push constant 267
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push constant 242
+push constant 230
+push constant 267
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 242
+push constant 230
+push constant 267
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push constant 242
+push constant 230
+push constant 267
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 242
+push constant 230
+push constant 267
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push static 18
+push constant 31
+call Output.moveCursor 2
+pop temp 0
+push constant 32
+call Output.printChar 1
+pop temp 0
+push constant 90
+call Random.randRange65 1
+pop static 5
+push constant 4
+push static 33
+add
+push static 5
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+pop static 18
+push constant 0
+not
+pop static 28
+label IF_FALSE4
+push static 28
+not
+if-goto IF_TRUE5
+goto IF_FALSE5
+label IF_TRUE5
+push constant 242
+push constant 230
+push constant 267
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+label IF_FALSE5
+push static 38
+not
+if-goto IF_TRUE6
+goto IF_FALSE6
+label IF_TRUE6
+push constant 242
+push constant 203
+push constant 267
+push constant 228
+call Screen.drawRectangle 4
+pop temp 0
+label IF_FALSE6
+label IF_FALSE2
+push static 13
+push constant 2
+eq
+if-goto IF_TRUE7
+goto IF_FALSE7
+label IF_TRUE7
+push static 18
+push constant 20
+eq
+push static 28
+not
+and
+if-goto IF_TRUE8
+goto IF_FALSE8
+label IF_TRUE8
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 242
+push constant 230
+push constant 267
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push constant 242
+push constant 230
+push constant 267
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 242
+push constant 230
+push constant 267
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push constant 242
+push constant 230
+push constant 267
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 242
+push constant 230
+push constant 267
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push constant 242
+push constant 230
+push constant 267
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 242
+push constant 230
+push constant 267
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push static 18
+push constant 31
+call Output.moveCursor 2
+pop temp 0
+push constant 32
+call Output.printChar 1
+pop temp 0
+push constant 90
+call Random.randRange65 1
+pop static 5
+push constant 4
+push static 33
+add
+push static 5
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+pop static 18
+push constant 0
+not
+pop static 28
+label IF_FALSE8
+push static 28
+not
+if-goto IF_TRUE9
+goto IF_FALSE9
+label IF_TRUE9
+push constant 242
+push constant 230
+push constant 267
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+label IF_FALSE9
+label IF_FALSE7
+push static 18
+push constant 1
+add
+pop static 18
+push static 12
+push constant 3
+lt
+if-goto IF_TRUE10
+goto IF_FALSE10
+label IF_TRUE10
+push constant 50
+pop static 12
+label IF_FALSE10
+push static 10
+push constant 250
+gt
+if-goto IF_TRUE11
+goto IF_FALSE11
+label IF_TRUE11
+push static 12
+push constant 1
+sub
+pop static 12
+label IF_FALSE11
+push constant 0
+return
+function Main.padSlova6stup 0
+push static 19
+push constant 20
+gt
+if-goto IF_TRUE0
+goto IF_FALSE0
+label IF_TRUE0
+push constant 0
+pop static 23
+label IF_FALSE0
+push static 19
+push constant 35
+call Output.moveCursor 2
+pop temp 0
+push argument 0
+call Output.printChar 1
+pop temp 0
+push static 19
+push constant 1
+sub
+push constant 35
+call Output.moveCursor 2
+pop temp 0
+push constant 32
+call Output.printChar 1
+pop temp 0
+call Keyboard.keyPressed 0
+push argument 0
+eq
+if-goto IF_TRUE1
+goto IF_FALSE1
+label IF_TRUE1
+push static 19
+push constant 35
+call Output.moveCursor 2
+pop temp 0
+push constant 32
+call Output.printChar 1
+pop temp 0
+push constant 90
+call Random.randRange65 1
+pop static 6
+push constant 5
+push static 33
+add
+push static 6
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+pop static 19
+push static 10
+push constant 1
+add
+pop static 10
+call Main.printScore 0
+pop temp 0
+label IF_FALSE1
+push static 13
+push constant 1
+eq
+if-goto IF_TRUE2
+goto IF_FALSE2
+label IF_TRUE2
+push static 19
+push constant 18
+eq
+push static 39
+not
+and
+if-goto IF_TRUE3
+goto IF_FALSE3
+label IF_TRUE3
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 269
+push constant 203
+push constant 294
+push constant 228
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push constant 269
+push constant 203
+push constant 294
+push constant 228
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 269
+push constant 203
+push constant 294
+push constant 228
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push constant 269
+push constant 203
+push constant 294
+push constant 228
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 269
+push constant 203
+push constant 294
+push constant 228
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push constant 269
+push constant 203
+push constant 294
+push constant 228
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 269
+push constant 203
+push constant 294
+push constant 228
+call Screen.drawRectangle 4
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push static 19
+push constant 35
+call Output.moveCursor 2
+pop temp 0
+push constant 32
+call Output.printChar 1
+pop temp 0
+push constant 90
+call Random.randRange65 1
+pop static 6
+push constant 5
+push static 33
+add
+push static 6
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+pop static 19
+push constant 0
+not
+pop static 39
+label IF_FALSE3
+push static 19
+push constant 20
+eq
+push static 29
+not
+and
+if-goto IF_TRUE4
+goto IF_FALSE4
+label IF_TRUE4
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 269
+push constant 230
+push constant 294
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push constant 269
+push constant 230
+push constant 294
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 269
+push constant 230
+push constant 294
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push constant 269
+push constant 230
+push constant 294
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 269
+push constant 230
+push constant 294
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push constant 269
+push constant 230
+push constant 294
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 269
+push constant 230
+push constant 294
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push static 19
+push constant 35
+call Output.moveCursor 2
+pop temp 0
+push constant 32
+call Output.printChar 1
+pop temp 0
+push constant 90
+call Random.randRange65 1
+pop static 6
+push constant 5
+push static 33
+add
+push static 6
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+pop static 19
+push constant 0
+not
+pop static 29
+label IF_FALSE4
+push static 29
+not
+if-goto IF_TRUE5
+goto IF_FALSE5
+label IF_TRUE5
+push constant 269
+push constant 230
+push constant 294
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+label IF_FALSE5
+push static 39
+not
+if-goto IF_TRUE6
+goto IF_FALSE6
+label IF_TRUE6
+push constant 269
+push constant 203
+push constant 294
+push constant 228
+call Screen.drawRectangle 4
+pop temp 0
+label IF_FALSE6
+label IF_FALSE2
+push static 13
+push constant 2
+eq
+if-goto IF_TRUE7
+goto IF_FALSE7
+label IF_TRUE7
+push static 19
+push constant 20
+eq
+push static 29
+not
+and
+if-goto IF_TRUE8
+goto IF_FALSE8
+label IF_TRUE8
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 269
+push constant 230
+push constant 294
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push constant 269
+push constant 230
+push constant 294
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 269
+push constant 230
+push constant 294
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push constant 269
+push constant 230
+push constant 294
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 269
+push constant 230
+push constant 294
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push constant 269
+push constant 230
+push constant 294
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 269
+push constant 230
+push constant 294
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push static 19
+push constant 35
+call Output.moveCursor 2
+pop temp 0
+push constant 32
+call Output.printChar 1
+pop temp 0
+push constant 90
+call Random.randRange65 1
+pop static 6
+push constant 5
+push static 33
+add
+push static 6
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+pop static 19
+push constant 0
+not
+pop static 29
+label IF_FALSE8
+push static 29
+not
+if-goto IF_TRUE9
+goto IF_FALSE9
+label IF_TRUE9
+push constant 269
+push constant 230
+push constant 294
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+label IF_FALSE9
+label IF_FALSE7
+push static 19
+push constant 1
+add
+pop static 19
+push static 12
+push constant 3
+lt
+if-goto IF_TRUE10
+goto IF_FALSE10
+label IF_TRUE10
+push constant 50
+pop static 12
+label IF_FALSE10
+push static 10
+push constant 300
+gt
+if-goto IF_TRUE11
+goto IF_FALSE11
+label IF_TRUE11
+push static 12
+push constant 1
+sub
+pop static 12
+label IF_FALSE11
+push constant 0
+return
+function Main.padSlova7stup 0
+push static 20
+push constant 20
+gt
+if-goto IF_TRUE0
+goto IF_FALSE0
+label IF_TRUE0
+push constant 0
+pop static 23
+label IF_FALSE0
+push static 20
+push constant 38
+call Output.moveCursor 2
+pop temp 0
+push argument 0
+call Output.printChar 1
+pop temp 0
+push static 20
+push constant 1
+sub
+push constant 38
+call Output.moveCursor 2
+pop temp 0
+push constant 32
+call Output.printChar 1
+pop temp 0
+call Keyboard.keyPressed 0
+push argument 0
+eq
+if-goto IF_TRUE1
+goto IF_FALSE1
+label IF_TRUE1
+push static 20
+push constant 38
+call Output.moveCursor 2
+pop temp 0
+push constant 32
+call Output.printChar 1
+pop temp 0
+push constant 90
+call Random.randRange65 1
+pop static 7
+push constant 6
+push static 33
+add
+push static 7
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+pop static 20
+push static 10
+push constant 1
+add
+pop static 10
+call Main.printScore 0
+pop temp 0
+label IF_FALSE1
+push static 13
+push constant 1
+eq
+if-goto IF_TRUE2
+goto IF_FALSE2
+label IF_TRUE2
+push static 20
+push constant 18
+eq
+push static 40
+not
+and
+if-goto IF_TRUE3
+goto IF_FALSE3
+label IF_TRUE3
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 296
+push constant 203
+push constant 321
+push constant 228
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push constant 296
+push constant 203
+push constant 321
+push constant 228
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 296
+push constant 203
+push constant 321
+push constant 228
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push constant 296
+push constant 203
+push constant 321
+push constant 228
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 296
+push constant 203
+push constant 321
+push constant 228
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push constant 296
+push constant 203
+push constant 321
+push constant 228
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 296
+push constant 203
+push constant 321
+push constant 228
+call Screen.drawRectangle 4
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push static 20
+push constant 38
+call Output.moveCursor 2
+pop temp 0
+push constant 32
+call Output.printChar 1
+pop temp 0
+push constant 90
+call Random.randRange65 1
+pop static 7
+push constant 6
+push static 33
+add
+push static 7
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+pop static 20
+push constant 0
+not
+pop static 40
+label IF_FALSE3
+push static 20
+push constant 20
+eq
+push static 30
+not
+and
+if-goto IF_TRUE4
+goto IF_FALSE4
+label IF_TRUE4
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 296
+push constant 230
+push constant 321
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push constant 296
+push constant 230
+push constant 321
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 296
+push constant 230
+push constant 321
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push constant 296
+push constant 230
+push constant 321
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 296
+push constant 230
+push constant 321
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push constant 296
+push constant 230
+push constant 321
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 296
+push constant 230
+push constant 321
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push static 20
+push constant 38
+call Output.moveCursor 2
+pop temp 0
+push constant 32
+call Output.printChar 1
+pop temp 0
+push constant 90
+call Random.randRange65 1
+pop static 7
+push constant 6
+push static 33
+add
+push static 7
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+pop static 20
+push constant 0
+not
+pop static 30
+label IF_FALSE4
+push static 30
+not
+if-goto IF_TRUE5
+goto IF_FALSE5
+label IF_TRUE5
+push constant 296
+push constant 230
+push constant 321
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+label IF_FALSE5
+push static 40
+not
+if-goto IF_TRUE6
+goto IF_FALSE6
+label IF_TRUE6
+push constant 296
+push constant 203
+push constant 321
+push constant 228
+call Screen.drawRectangle 4
+pop temp 0
+label IF_FALSE6
+label IF_FALSE2
+push static 13
+push constant 2
+eq
+if-goto IF_TRUE7
+goto IF_FALSE7
+label IF_TRUE7
+push static 20
+push constant 20
+eq
+push static 30
+not
+and
+if-goto IF_TRUE8
+goto IF_FALSE8
+label IF_TRUE8
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 296
+push constant 230
+push constant 321
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push constant 296
+push constant 230
+push constant 321
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 296
+push constant 230
+push constant 321
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push constant 296
+push constant 230
+push constant 321
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 296
+push constant 230
+push constant 321
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push constant 296
+push constant 230
+push constant 321
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 296
+push constant 230
+push constant 321
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push static 20
+push constant 38
+call Output.moveCursor 2
+pop temp 0
+push constant 32
+call Output.printChar 1
+pop temp 0
+push constant 90
+call Random.randRange65 1
+pop static 7
+push constant 6
+push static 33
+add
+push static 7
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+pop static 20
+push constant 0
+not
+pop static 30
+label IF_FALSE8
+push static 30
+not
+if-goto IF_TRUE9
+goto IF_FALSE9
+label IF_TRUE9
+push constant 296
+push constant 230
+push constant 321
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+label IF_FALSE9
+label IF_FALSE7
+push static 20
+push constant 1
+add
+pop static 20
+push static 12
+push constant 3
+lt
+if-goto IF_TRUE10
+goto IF_FALSE10
+label IF_TRUE10
+push constant 50
+pop static 12
+label IF_FALSE10
+push static 10
+push constant 350
+gt
+if-goto IF_TRUE11
+goto IF_FALSE11
+label IF_TRUE11
+push static 12
+push constant 1
+sub
+pop static 12
+label IF_FALSE11
+push constant 0
+return
+function Main.padSlova8stup 0
+push static 21
+push constant 20
+gt
+if-goto IF_TRUE0
+goto IF_FALSE0
+label IF_TRUE0
+push constant 0
+pop static 23
+label IF_FALSE0
+push static 21
+push constant 42
+call Output.moveCursor 2
+pop temp 0
+push argument 0
+call Output.printChar 1
+pop temp 0
+push static 21
+push constant 1
+sub
+push constant 42
+call Output.moveCursor 2
+pop temp 0
+push constant 32
+call Output.printChar 1
+pop temp 0
+call Keyboard.keyPressed 0
+push argument 0
+eq
+if-goto IF_TRUE1
+goto IF_FALSE1
+label IF_TRUE1
+push static 21
+push constant 42
+call Output.moveCursor 2
+pop temp 0
+push constant 32
+call Output.printChar 1
+pop temp 0
+push constant 90
+call Random.randRange65 1
+pop static 8
+push constant 7
+push static 33
+add
+push static 8
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+pop static 21
+push static 10
+push constant 1
+add
+pop static 10
+call Main.printScore 0
+pop temp 0
+label IF_FALSE1
+push static 13
+push constant 1
+eq
+if-goto IF_TRUE2
+goto IF_FALSE2
+label IF_TRUE2
+push static 21
+push constant 18
+eq
+push static 41
+not
+and
+if-goto IF_TRUE3
+goto IF_FALSE3
+label IF_TRUE3
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 323
+push constant 203
+push constant 348
+push constant 228
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push constant 323
+push constant 203
+push constant 348
+push constant 228
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 323
+push constant 203
+push constant 348
+push constant 228
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push constant 323
+push constant 203
+push constant 348
+push constant 228
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 323
+push constant 203
+push constant 348
+push constant 228
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push constant 323
+push constant 203
+push constant 348
+push constant 228
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 323
+push constant 203
+push constant 348
+push constant 228
+call Screen.drawRectangle 4
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push static 21
+push constant 42
+call Output.moveCursor 2
+pop temp 0
+push constant 32
+call Output.printChar 1
+pop temp 0
+push constant 90
+call Random.randRange65 1
+pop static 8
+push constant 7
+push static 33
+add
+push static 8
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+pop static 21
+push constant 0
+not
+pop static 41
+label IF_FALSE3
+push static 21
+push constant 20
+eq
+push static 31
+not
+and
+if-goto IF_TRUE4
+goto IF_FALSE4
+label IF_TRUE4
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 323
+push constant 230
+push constant 348
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push constant 323
+push constant 230
+push constant 348
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 323
+push constant 230
+push constant 348
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push constant 323
+push constant 230
+push constant 348
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 323
+push constant 230
+push constant 348
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push constant 323
+push constant 230
+push constant 348
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 323
+push constant 230
+push constant 348
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push static 21
+push constant 42
+call Output.moveCursor 2
+pop temp 0
+push constant 32
+call Output.printChar 1
+pop temp 0
+push constant 90
+call Random.randRange65 1
+pop static 8
+push constant 7
+push static 33
+add
+push static 8
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+pop static 21
+push constant 0
+not
+pop static 31
+label IF_FALSE4
+push static 31
+not
+if-goto IF_TRUE5
+goto IF_FALSE5
+label IF_TRUE5
+push constant 323
+push constant 230
+push constant 348
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+label IF_FALSE5
+push static 41
+not
+if-goto IF_TRUE6
+goto IF_FALSE6
+label IF_TRUE6
+push constant 323
+push constant 203
+push constant 348
+push constant 228
+call Screen.drawRectangle 4
+pop temp 0
+label IF_FALSE6
+label IF_FALSE2
+push static 13
+push constant 2
+eq
+if-goto IF_TRUE7
+goto IF_FALSE7
+label IF_TRUE7
+push static 21
+push constant 20
+eq
+push static 31
+not
+and
+if-goto IF_TRUE8
+goto IF_FALSE8
+label IF_TRUE8
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 323
+push constant 230
+push constant 348
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push constant 323
+push constant 230
+push constant 348
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 323
+push constant 230
+push constant 348
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push constant 323
+push constant 230
+push constant 348
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 323
+push constant 230
+push constant 348
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push constant 323
+push constant 230
+push constant 348
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 323
+push constant 230
+push constant 348
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push static 21
+push constant 42
+call Output.moveCursor 2
+pop temp 0
+push constant 32
+call Output.printChar 1
+pop temp 0
+push constant 90
+call Random.randRange65 1
+pop static 8
+push constant 7
+push static 33
+add
+push static 8
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+pop static 21
+push constant 0
+not
+pop static 31
+label IF_FALSE8
+push static 31
+not
+if-goto IF_TRUE9
+goto IF_FALSE9
+label IF_TRUE9
+push constant 323
+push constant 230
+push constant 348
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+label IF_FALSE9
+label IF_FALSE7
+push static 21
+push constant 1
+add
+pop static 21
+push static 12
+push constant 3
+lt
+if-goto IF_TRUE10
+goto IF_FALSE10
+label IF_TRUE10
+push constant 50
+pop static 12
+label IF_FALSE10
+push static 10
+push constant 400
+gt
+if-goto IF_TRUE11
+goto IF_FALSE11
+label IF_TRUE11
+push static 12
+push constant 1
+sub
+pop static 12
+label IF_FALSE11
+push constant 0
+return
+function Main.padSlova9stup 0
+push static 22
+push constant 20
+gt
+if-goto IF_TRUE0
+goto IF_FALSE0
+label IF_TRUE0
+push constant 0
+pop static 23
+label IF_FALSE0
+push static 22
+push constant 45
+call Output.moveCursor 2
+pop temp 0
+push argument 0
+call Output.printChar 1
+pop temp 0
+push static 22
+push constant 1
+sub
+push constant 45
+call Output.moveCursor 2
+pop temp 0
+push constant 32
+call Output.printChar 1
+pop temp 0
+call Keyboard.keyPressed 0
+push argument 0
+eq
+if-goto IF_TRUE1
+goto IF_FALSE1
+label IF_TRUE1
+push static 22
+push constant 45
+call Output.moveCursor 2
+pop temp 0
+push constant 32
+call Output.printChar 1
+pop temp 0
+push constant 90
+call Random.randRange65 1
+pop static 9
+push constant 8
+push static 33
+add
+push static 9
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+pop static 22
+push static 10
+push constant 1
+add
+pop static 10
+call Main.printScore 0
+pop temp 0
+label IF_FALSE1
+push static 13
+push constant 1
+eq
+if-goto IF_TRUE2
+goto IF_FALSE2
+label IF_TRUE2
+push static 22
+push constant 18
+eq
+push static 42
+not
+and
+if-goto IF_TRUE3
+goto IF_FALSE3
+label IF_TRUE3
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 350
+push constant 203
+push constant 375
+push constant 228
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push constant 350
+push constant 203
+push constant 375
+push constant 228
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 350
+push constant 203
+push constant 375
+push constant 228
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push constant 350
+push constant 203
+push constant 375
+push constant 228
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 350
+push constant 203
+push constant 375
+push constant 228
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push constant 350
+push constant 203
+push constant 375
+push constant 228
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 350
+push constant 203
+push constant 375
+push constant 228
+call Screen.drawRectangle 4
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push static 22
+push constant 45
+call Output.moveCursor 2
+pop temp 0
+push constant 32
+call Output.printChar 1
+pop temp 0
+push constant 90
+call Random.randRange65 1
+pop static 9
+push constant 8
+push static 33
+add
+push static 9
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+pop static 22
+push constant 0
+not
+pop static 42
+label IF_FALSE3
+push static 22
+push constant 20
+eq
+push static 32
+not
+and
+if-goto IF_TRUE4
+goto IF_FALSE4
+label IF_TRUE4
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 350
+push constant 230
+push constant 375
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push constant 350
+push constant 230
+push constant 375
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 350
+push constant 230
+push constant 375
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push constant 350
+push constant 230
+push constant 375
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 350
+push constant 230
+push constant 375
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push constant 350
+push constant 230
+push constant 375
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 350
+push constant 230
+push constant 375
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push static 22
+push constant 45
+call Output.moveCursor 2
+pop temp 0
+push constant 32
+call Output.printChar 1
+pop temp 0
+push constant 90
+call Random.randRange65 1
+pop static 9
+push constant 8
+push static 33
+add
+push static 9
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+pop static 22
+push constant 0
+not
+pop static 32
+label IF_FALSE4
+push static 32
+not
+if-goto IF_TRUE5
+goto IF_FALSE5
+label IF_TRUE5
+push constant 350
+push constant 230
+push constant 375
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+label IF_FALSE5
+push static 42
+not
+if-goto IF_TRUE6
+goto IF_FALSE6
+label IF_TRUE6
+push constant 350
+push constant 203
+push constant 375
+push constant 228
+call Screen.drawRectangle 4
+pop temp 0
+label IF_FALSE6
+label IF_FALSE2
+push static 13
+push constant 2
+eq
+if-goto IF_TRUE7
+goto IF_FALSE7
+label IF_TRUE7
+push static 22
+push constant 20
+eq
+push static 32
+not
+and
+if-goto IF_TRUE8
+goto IF_FALSE8
+label IF_TRUE8
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 350
+push constant 230
+push constant 375
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push constant 350
+push constant 230
+push constant 375
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 350
+push constant 230
+push constant 375
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push constant 350
+push constant 230
+push constant 375
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 350
+push constant 230
+push constant 375
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push constant 350
+push constant 230
+push constant 375
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 350
+push constant 230
+push constant 375
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push static 22
+push constant 45
+call Output.moveCursor 2
+pop temp 0
+push constant 32
+call Output.printChar 1
+pop temp 0
+push constant 90
+call Random.randRange65 1
+pop static 9
+push constant 8
+push static 33
+add
+push static 9
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+pop static 22
+push constant 0
+not
+pop static 32
+label IF_FALSE8
+push static 32
+not
+if-goto IF_TRUE9
+goto IF_FALSE9
+label IF_TRUE9
+push constant 350
+push constant 230
+push constant 375
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+label IF_FALSE9
+label IF_FALSE7
+push static 22
+push constant 1
+add
+pop static 22
+push static 12
+push constant 3
+lt
+if-goto IF_TRUE10
+goto IF_FALSE10
+label IF_TRUE10
+push constant 50
+pop static 12
+label IF_FALSE10
+push static 10
+push constant 450
+gt
+if-goto IF_TRUE11
+goto IF_FALSE11
+label IF_TRUE11
+push static 12
+push constant 1
+sub
+pop static 12
+label IF_FALSE11
+push constant 0
+return
+function Main.kbdProvjere 0
+call Keyboard.keyPressed 0
+push constant 0
+push argument 0
+add
+pop pointer 1
+push that 0
+eq
+if-goto IF_TRUE0
+goto IF_FALSE0
+label IF_TRUE0
+push static 14
+push constant 1
+sub
+push constant 18
+call Output.moveCursor 2
+pop temp 0
+push static 14
+push constant 18
+call Output.moveCursor 2
+pop temp 0
+push constant 32
+call Output.printChar 1
+pop temp 0
+push constant 90
+call Random.randRange65 1
+pop static 1
+push constant 0
+push argument 0
+add
+push static 1
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+pop static 14
+push static 10
+push constant 1
+add
+pop static 10
+call Main.printScore 0
+pop temp 0
+label IF_FALSE0
+call Keyboard.keyPressed 0
+push constant 1
+push argument 0
+add
+pop pointer 1
+push that 0
+eq
+if-goto IF_TRUE1
+goto IF_FALSE1
+label IF_TRUE1
+push static 15
+push constant 1
+sub
+push constant 21
+call Output.moveCursor 2
+pop temp 0
+push static 15
+push constant 21
+call Output.moveCursor 2
+pop temp 0
+push constant 32
+call Output.printChar 1
+pop temp 0
+push constant 90
+call Random.randRange65 1
+pop static 2
+push constant 1
+push argument 0
+add
+push static 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+pop static 15
+push static 10
+push constant 1
+add
+pop static 10
+call Main.printScore 0
+pop temp 0
+label IF_FALSE1
+call Keyboard.keyPressed 0
+push constant 2
+push argument 0
+add
+pop pointer 1
+push that 0
+eq
+if-goto IF_TRUE2
+goto IF_FALSE2
+label IF_TRUE2
+push static 16
+push constant 1
+sub
+push constant 25
+call Output.moveCursor 2
+pop temp 0
+push static 16
+push constant 25
+call Output.moveCursor 2
+pop temp 0
+push constant 32
+call Output.printChar 1
+pop temp 0
+push constant 90
+call Random.randRange65 1
+pop static 3
+push constant 2
+push argument 0
+add
+push static 3
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+pop static 16
+push static 10
+push constant 1
+add
+pop static 10
+call Main.printScore 0
+pop temp 0
+label IF_FALSE2
+call Keyboard.keyPressed 0
+push constant 3
+push argument 0
+add
+pop pointer 1
+push that 0
+eq
+if-goto IF_TRUE3
+goto IF_FALSE3
+label IF_TRUE3
+push static 17
+push constant 1
+sub
+push constant 28
+call Output.moveCursor 2
+pop temp 0
+push static 17
+push constant 28
+call Output.moveCursor 2
+pop temp 0
+push constant 32
+call Output.printChar 1
+pop temp 0
+push constant 90
+call Random.randRange65 1
+pop static 4
+push constant 3
+push argument 0
+add
+push static 4
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+pop static 17
+push static 10
+push constant 1
+add
+pop static 10
+call Main.printScore 0
+pop temp 0
+label IF_FALSE3
+call Keyboard.keyPressed 0
+push constant 4
+push argument 0
+add
+pop pointer 1
+push that 0
+eq
+if-goto IF_TRUE4
+goto IF_FALSE4
+label IF_TRUE4
+push static 18
+push constant 1
+sub
+push constant 31
+call Output.moveCursor 2
+pop temp 0
+push static 18
+push constant 31
+call Output.moveCursor 2
+pop temp 0
+push constant 32
+call Output.printChar 1
+pop temp 0
+push constant 90
+call Random.randRange65 1
+pop static 5
+push constant 4
+push argument 0
+add
+push static 5
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+pop static 18
+push static 10
+push constant 1
+add
+pop static 10
+call Main.printScore 0
+pop temp 0
+label IF_FALSE4
+call Keyboard.keyPressed 0
+push constant 5
+push argument 0
+add
+pop pointer 1
+push that 0
+eq
+if-goto IF_TRUE5
+goto IF_FALSE5
+label IF_TRUE5
+push static 19
+push constant 1
+sub
+push constant 35
+call Output.moveCursor 2
+pop temp 0
+push static 19
+push constant 35
+call Output.moveCursor 2
+pop temp 0
+push constant 32
+call Output.printChar 1
+pop temp 0
+push constant 90
+call Random.randRange65 1
+pop static 6
+push constant 5
+push argument 0
+add
+push static 6
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+pop static 19
+push static 10
+push constant 1
+add
+pop static 10
+call Main.printScore 0
+pop temp 0
+label IF_FALSE5
+call Keyboard.keyPressed 0
+push constant 6
+push argument 0
+add
+pop pointer 1
+push that 0
+eq
+if-goto IF_TRUE6
+goto IF_FALSE6
+label IF_TRUE6
+push static 20
+push constant 1
+sub
+push constant 38
+call Output.moveCursor 2
+pop temp 0
+push static 20
+push constant 38
+call Output.moveCursor 2
+pop temp 0
+push constant 32
+call Output.printChar 1
+pop temp 0
+push constant 90
+call Random.randRange65 1
+pop static 7
+push constant 6
+push argument 0
+add
+push static 7
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+pop static 20
+push static 10
+push constant 1
+add
+pop static 10
+call Main.printScore 0
+pop temp 0
+label IF_FALSE6
+call Keyboard.keyPressed 0
+push constant 7
+push argument 0
+add
+pop pointer 1
+push that 0
+eq
+if-goto IF_TRUE7
+goto IF_FALSE7
+label IF_TRUE7
+push static 21
+push constant 1
+sub
+push constant 42
+call Output.moveCursor 2
+pop temp 0
+push static 21
+push constant 42
+call Output.moveCursor 2
+pop temp 0
+push constant 32
+call Output.printChar 1
+pop temp 0
+push constant 90
+call Random.randRange65 1
+pop static 8
+push constant 7
+push argument 0
+add
+push static 8
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+pop static 21
+push static 10
+push constant 1
+add
+pop static 10
+call Main.printScore 0
+pop temp 0
+label IF_FALSE7
+call Keyboard.keyPressed 0
+push constant 8
+push argument 0
+add
+pop pointer 1
+push that 0
+eq
+if-goto IF_TRUE8
+goto IF_FALSE8
+label IF_TRUE8
+push static 22
+push constant 1
+sub
+push constant 45
+call Output.moveCursor 2
+pop temp 0
+push static 22
+push constant 45
+call Output.moveCursor 2
+pop temp 0
+push constant 32
+call Output.printChar 1
+pop temp 0
+push constant 90
+call Random.randRange65 1
+pop static 9
+push constant 8
+push argument 0
+add
+push static 9
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+pop static 22
+push static 10
+push constant 1
+add
+pop static 10
+call Main.printScore 0
+pop temp 0
+label IF_FALSE8
+push constant 0
+return
+function Main.start 0
+push constant 2
+push constant 21
+call Output.moveCursor 2
+pop temp 0
+push constant 7
+call String.new 1
+push constant 84
+call String.appendChar 2
+push constant 89
+call String.appendChar 2
+push constant 80
+call String.appendChar 2
+push constant 73
+call String.appendChar 2
+push constant 78
+call String.appendChar 2
+push constant 71
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+call Output.printString 1
+pop temp 0
+push constant 400
+call Sys.wait 1
+pop temp 0
+push constant 5
+call String.new 1
+push constant 71
+call String.appendChar 2
+push constant 65
+call String.appendChar 2
+push constant 77
+call String.appendChar 2
+push constant 69
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+call Output.printString 1
+pop temp 0
+push constant 400
+call Sys.wait 1
+pop temp 0
+push constant 6
+call String.new 1
+push constant 68
+call String.appendChar 2
+push constant 69
+call String.appendChar 2
+push constant 76
+call String.appendChar 2
+push constant 85
+call String.appendChar 2
+push constant 88
+call String.appendChar 2
+push constant 69
+call String.appendChar 2
+call Output.printString 1
+pop temp 0
+push constant 400
+call Sys.wait 1
+pop temp 0
+push constant 5
+push constant 15
+call Output.moveCursor 2
+pop temp 0
+push constant 27
+call String.new 1
+push constant 83
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 108
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 99
+call String.appendChar 2
+push constant 116
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 100
+call String.appendChar 2
+push constant 105
+call String.appendChar 2
+push constant 102
+call String.appendChar 2
+push constant 102
+call String.appendChar 2
+push constant 105
+call String.appendChar 2
+push constant 99
+call String.appendChar 2
+push constant 117
+call String.appendChar 2
+push constant 108
+call String.appendChar 2
+push constant 116
+call String.appendChar 2
+push constant 121
+call String.appendChar 2
+push constant 58
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 91
+call String.appendChar 2
+push constant 110
+call String.appendChar 2
+push constant 117
+call String.appendChar 2
+push constant 109
+call String.appendChar 2
+push constant 98
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 114
+call String.appendChar 2
+push constant 93
+call String.appendChar 2
+call Output.printString 1
+pop temp 0
+push constant 200
+call Sys.wait 1
+pop temp 0
+push constant 7
+push constant 18
+call Output.moveCursor 2
+pop temp 0
+push constant 9
+call String.new 1
+push constant 49
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 45
+call String.appendChar 2
+push constant 62
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 69
+call String.appendChar 2
+push constant 65
+call String.appendChar 2
+push constant 83
+call String.appendChar 2
+push constant 89
+call String.appendChar 2
+call Output.printString 1
+pop temp 0
+push constant 200
+call Sys.wait 1
+pop temp 0
+push constant 8
+push constant 18
+call Output.moveCursor 2
+pop temp 0
+push constant 11
+call String.new 1
+push constant 50
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 45
+call String.appendChar 2
+push constant 62
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 77
+call String.appendChar 2
+push constant 69
+call String.appendChar 2
+push constant 68
+call String.appendChar 2
+push constant 73
+call String.appendChar 2
+push constant 85
+call String.appendChar 2
+push constant 77
+call String.appendChar 2
+call Output.printString 1
+pop temp 0
+push constant 200
+call Sys.wait 1
+pop temp 0
+push constant 9
+push constant 18
+call Output.moveCursor 2
+pop temp 0
+push constant 9
+call String.new 1
+push constant 51
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 45
+call String.appendChar 2
+push constant 62
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 72
+call String.appendChar 2
+push constant 65
+call String.appendChar 2
+push constant 82
+call String.appendChar 2
+push constant 68
+call String.appendChar 2
+call Output.printString 1
+pop temp 0
+push constant 200
+call Sys.wait 1
+pop temp 0
+push constant 10
+push constant 18
+call Output.moveCursor 2
+pop temp 0
+push constant 13
+call String.new 1
+push constant 52
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 45
+call String.appendChar 2
+push constant 62
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 78
+call String.appendChar 2
+push constant 73
+call String.appendChar 2
+push constant 71
+call String.appendChar 2
+push constant 72
+call String.appendChar 2
+push constant 77
+call String.appendChar 2
+push constant 65
+call String.appendChar 2
+push constant 82
+call String.appendChar 2
+push constant 69
+call String.appendChar 2
+call Output.printString 1
+pop temp 0
+push constant 200
+call Sys.wait 1
+pop temp 0
+push constant 13
+push constant 15
+call Output.moveCursor 2
+pop temp 0
+push constant 18
+call String.new 1
+push constant 69
+call String.appendChar 2
+push constant 110
+call String.appendChar 2
+push constant 116
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 114
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 100
+call String.appendChar 2
+push constant 105
+call String.appendChar 2
+push constant 102
+call String.appendChar 2
+push constant 102
+call String.appendChar 2
+push constant 105
+call String.appendChar 2
+push constant 99
+call String.appendChar 2
+push constant 117
+call String.appendChar 2
+push constant 108
+call String.appendChar 2
+push constant 116
+call String.appendChar 2
+push constant 121
+call String.appendChar 2
+push constant 58
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+call Keyboard.readInt 1
+pop static 13
+call Screen.clearScreen 0
+pop temp 0
+push static 13
+push constant 0
+eq
+if-goto IF_TRUE0
+goto IF_FALSE0
+label IF_TRUE0
+call Screen.clearScreen 0
+pop temp 0
+call GUI.easterEgg 0
+pop temp 0
+call Screen.clearScreen 0
+pop temp 0
+call Main.start 0
+pop temp 0
+label IF_FALSE0
+push static 13
+push constant 0
+gt
+push static 13
+push constant 5
+lt
+and
+if-goto IF_TRUE1
+goto IF_FALSE1
+label IF_TRUE1
+push static 13
+push constant 1
+eq
+if-goto IF_TRUE2
+goto IF_FALSE2
+label IF_TRUE2
+push constant 150
+pop static 12
+label IF_FALSE2
+push static 13
+push constant 2
+eq
+if-goto IF_TRUE3
+goto IF_FALSE3
+label IF_TRUE3
+push constant 100
+pop static 12
+label IF_FALSE3
+push static 13
+push constant 3
+eq
+if-goto IF_TRUE4
+goto IF_FALSE4
+label IF_TRUE4
+push constant 100
+pop static 12
+label IF_FALSE4
+push static 13
+push constant 4
+eq
+if-goto IF_TRUE5
+goto IF_FALSE5
+label IF_TRUE5
+push constant 50
+pop static 12
+label IF_FALSE5
+goto IF_END1
+label IF_FALSE1
+call Screen.clearScreen 0
+pop temp 0
+push constant 8
+push constant 5
+call Output.moveCursor 2
+pop temp 0
+push constant 53
+call String.new 1
+push constant 68
+call String.appendChar 2
+push constant 105
+call String.appendChar 2
+push constant 102
+call String.appendChar 2
+push constant 102
+call String.appendChar 2
+push constant 105
+call String.appendChar 2
+push constant 99
+call String.appendChar 2
+push constant 117
+call String.appendChar 2
+push constant 108
+call String.appendChar 2
+push constant 116
+call String.appendChar 2
+push constant 121
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 99
+call String.appendChar 2
+push constant 97
+call String.appendChar 2
+push constant 110
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 98
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 115
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 116
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 102
+call String.appendChar 2
+push constant 114
+call String.appendChar 2
+push constant 111
+call String.appendChar 2
+push constant 109
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 49
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 40
+call String.appendChar 2
+push constant 69
+call String.appendChar 2
+push constant 97
+call String.appendChar 2
+push constant 115
+call String.appendChar 2
+push constant 105
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 115
+call String.appendChar 2
+push constant 116
+call String.appendChar 2
+push constant 41
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 116
+call String.appendChar 2
+push constant 111
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 52
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 40
+call String.appendChar 2
+push constant 72
+call String.appendChar 2
+push constant 97
+call String.appendChar 2
+push constant 114
+call String.appendChar 2
+push constant 100
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 115
+call String.appendChar 2
+push constant 116
+call String.appendChar 2
+push constant 41
+call String.appendChar 2
+call Output.printString 1
+pop temp 0
+push constant 4000
+call Sys.wait 1
+pop temp 0
+call Screen.clearScreen 0
+pop temp 0
+call Main.start 0
+pop temp 0
+label IF_END1
+push constant 0
+return
+function Main.loadingScreen 2
+push constant 7
+pop local 0
+push constant 0
+pop local 1
+push constant 134
+push constant 230
+push constant 159
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 188
+push constant 230
+push constant 213
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 215
+push constant 230
+push constant 240
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 242
+push constant 230
+push constant 267
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 269
+push constant 230
+push constant 294
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 296
+push constant 230
+push constant 321
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 323
+push constant 230
+push constant 348
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 350
+push constant 230
+push constant 375
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 134
+push constant 203
+push constant 159
+push constant 228
+call Screen.drawRectangle 4
+pop temp 0
+push constant 215
+push constant 203
+push constant 240
+push constant 228
+call Screen.drawRectangle 4
+pop temp 0
+push constant 269
+push constant 203
+push constant 294
+push constant 228
+call Screen.drawRectangle 4
+pop temp 0
+push constant 350
+push constant 203
+push constant 375
+push constant 228
+call Screen.drawRectangle 4
+pop temp 0
+label WHILE_EXP0
+push local 0
+push constant 13
+lt
+not
+if-goto WHILE_END0
+push local 0
+push constant 18
+call Output.moveCursor 2
+pop temp 0
+push constant 84
+call Output.printChar 1
+pop temp 0
+push constant 100
+call Sys.wait 1
+pop temp 0
+push local 0
+push constant 1
+sub
+push constant 18
+call Output.moveCursor 2
+pop temp 0
+push constant 32
+call Output.printChar 1
+pop temp 0
+push local 0
+push constant 1
+add
+push constant 21
+call Output.moveCursor 2
+pop temp 0
+push constant 89
+call Output.printChar 1
+pop temp 0
+push constant 100
+call Sys.wait 1
+pop temp 0
+push local 0
+push constant 21
+call Output.moveCursor 2
+pop temp 0
+push constant 32
+call Output.printChar 1
+pop temp 0
+push local 0
+push constant 1
+sub
+push constant 25
+call Output.moveCursor 2
+pop temp 0
+push constant 80
+call Output.printChar 1
+pop temp 0
+push constant 100
+call Sys.wait 1
+pop temp 0
+push local 0
+push constant 2
+sub
+push constant 25
+call Output.moveCursor 2
+pop temp 0
+push constant 32
+call Output.printChar 1
+pop temp 0
+push local 0
+push constant 2
+add
+push constant 28
+call Output.moveCursor 2
+pop temp 0
+push constant 73
+call Output.printChar 1
+pop temp 0
+push constant 100
+call Sys.wait 1
+pop temp 0
+push local 0
+push constant 1
+add
+push constant 28
+call Output.moveCursor 2
+pop temp 0
+push constant 32
+call Output.printChar 1
+pop temp 0
+push local 0
+push constant 1
+sub
+push constant 31
+call Output.moveCursor 2
+pop temp 0
+push constant 78
+call Output.printChar 1
+pop temp 0
+push constant 100
+call Sys.wait 1
+pop temp 0
+push local 0
+push constant 2
+sub
+push constant 31
+call Output.moveCursor 2
+pop temp 0
+push constant 32
+call Output.printChar 1
+pop temp 0
+push local 0
+push constant 35
+call Output.moveCursor 2
+pop temp 0
+push constant 71
+call Output.printChar 1
+pop temp 0
+push constant 100
+call Sys.wait 1
+pop temp 0
+push local 0
+push constant 1
+sub
+push constant 35
+call Output.moveCursor 2
+pop temp 0
+push constant 32
+call Output.printChar 1
+pop temp 0
+push local 0
+push constant 2
+sub
+push constant 38
+call Output.moveCursor 2
+pop temp 0
+push constant 65
+call Output.printChar 1
+pop temp 0
+push constant 100
+call Sys.wait 1
+pop temp 0
+push local 0
+push constant 3
+sub
+push constant 38
+call Output.moveCursor 2
+pop temp 0
+push constant 32
+call Output.printChar 1
+pop temp 0
+push local 0
+push constant 1
+add
+push constant 42
+call Output.moveCursor 2
+pop temp 0
+push constant 77
+call Output.printChar 1
+pop temp 0
+push constant 100
+call Sys.wait 1
+pop temp 0
+push local 0
+push constant 42
+call Output.moveCursor 2
+pop temp 0
+push constant 32
+call Output.printChar 1
+pop temp 0
+push local 0
+push constant 2
+add
+push constant 45
+call Output.moveCursor 2
+pop temp 0
+push constant 69
+call Output.printChar 1
+pop temp 0
+push constant 100
+call Sys.wait 1
+pop temp 0
+push local 0
+push constant 1
+add
+push constant 45
+call Output.moveCursor 2
+pop temp 0
+push constant 32
+call Output.printChar 1
+pop temp 0
+push local 0
+push constant 1
+add
+pop local 0
+goto WHILE_EXP0
+label WHILE_END0
+call Screen.clearScreen 0
+pop temp 0
+push constant 0
+return
+function Main.gameOver 1
+push static 33
+call Array.dispose 1
+pop temp 0
+call Screen.clearScreen 0
+pop temp 0
+call Main.printUI 0
+pop temp 0
+push constant 10
+push constant 28
+call Output.moveCursor 2
+pop temp 0
+push constant 9
+call String.new 1
+push constant 71
+call String.appendChar 2
+push constant 65
+call String.appendChar 2
+push constant 77
+call String.appendChar 2
+push constant 69
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 79
+call String.appendChar 2
+push constant 86
+call String.appendChar 2
+push constant 69
+call String.appendChar 2
+push constant 82
+call String.appendChar 2
+call Output.printString 1
+pop temp 0
+push constant 300
+call Sys.wait 1
+pop temp 0
+call Screen.clearScreen 0
+pop temp 0
+call Main.printUI 0
+pop temp 0
+push constant 300
+call Sys.wait 1
+pop temp 0
+push constant 10
+push constant 28
+call Output.moveCursor 2
+pop temp 0
+push constant 9
+call String.new 1
+push constant 71
+call String.appendChar 2
+push constant 65
+call String.appendChar 2
+push constant 77
+call String.appendChar 2
+push constant 69
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 79
+call String.appendChar 2
+push constant 86
+call String.appendChar 2
+push constant 69
+call String.appendChar 2
+push constant 82
+call String.appendChar 2
+call Output.printString 1
+pop temp 0
+push constant 300
+call Sys.wait 1
+pop temp 0
+call Screen.clearScreen 0
+pop temp 0
+call Main.printUI 0
+pop temp 0
+push constant 300
+call Sys.wait 1
+pop temp 0
+push constant 10
+push constant 28
+call Output.moveCursor 2
+pop temp 0
+push constant 9
+call String.new 1
+push constant 71
+call String.appendChar 2
+push constant 65
+call String.appendChar 2
+push constant 77
+call String.appendChar 2
+push constant 69
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 79
+call String.appendChar 2
+push constant 86
+call String.appendChar 2
+push constant 69
+call String.appendChar 2
+push constant 82
+call String.appendChar 2
+call Output.printString 1
+pop temp 0
+push constant 300
+call Sys.wait 1
+pop temp 0
+call Screen.clearScreen 0
+pop temp 0
+call Main.printUI 0
+pop temp 0
+push constant 300
+call Sys.wait 1
+pop temp 0
+push constant 10
+push constant 28
+call Output.moveCursor 2
+pop temp 0
+push constant 9
+call String.new 1
+push constant 71
+call String.appendChar 2
+push constant 65
+call String.appendChar 2
+push constant 77
+call String.appendChar 2
+push constant 69
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 79
+call String.appendChar 2
+push constant 86
+call String.appendChar 2
+push constant 69
+call String.appendChar 2
+push constant 82
+call String.appendChar 2
+call Output.printString 1
+pop temp 0
+push constant 12
+push constant 28
+call Output.moveCursor 2
+pop temp 0
+push constant 7
+call String.new 1
+push constant 83
+call String.appendChar 2
+push constant 99
+call String.appendChar 2
+push constant 111
+call String.appendChar 2
+push constant 114
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 58
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+call Output.printString 1
+pop temp 0
+push static 10
+call Output.printInt 1
+pop temp 0
+push constant 3500
+call Sys.wait 1
+pop temp 0
+call Screen.clearScreen 0
+pop temp 0
+push constant 0
+push constant 0
+push constant 132
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 377
+push constant 0
+push constant 511
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 10
+push constant 22
+call Output.moveCursor 2
+pop temp 0
+push constant 18
+call String.new 1
+push constant 84
+call String.appendChar 2
+push constant 114
+call String.appendChar 2
+push constant 121
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 97
+call String.appendChar 2
+push constant 103
+call String.appendChar 2
+push constant 97
+call String.appendChar 2
+push constant 105
+call String.appendChar 2
+push constant 110
+call String.appendChar 2
+push constant 63
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 91
+call String.appendChar 2
+push constant 89
+call String.appendChar 2
+push constant 47
+call String.appendChar 2
+push constant 78
+call String.appendChar 2
+push constant 93
+call String.appendChar 2
+push constant 58
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+call Output.printString 1
+pop temp 0
+call Keyboard.readChar 0
+pop local 0
+call Screen.clearScreen 0
+pop temp 0
+push local 0
+push constant 89
+eq
+if-goto IF_TRUE0
+goto IF_FALSE0
+label IF_TRUE0
+call Main.initStaticVars 0
+pop temp 0
+call Main.printUI 0
+pop temp 0
+call Main.printScore 0
+pop temp 0
+push static 13
+push constant 1
+eq
+if-goto IF_TRUE1
+goto IF_FALSE1
+label IF_TRUE1
+push constant 150
+pop static 12
+label IF_FALSE1
+push static 13
+push constant 2
+eq
+if-goto IF_TRUE2
+goto IF_FALSE2
+label IF_TRUE2
+push constant 100
+pop static 12
+label IF_FALSE2
+push static 13
+push constant 3
+eq
+if-goto IF_TRUE3
+goto IF_FALSE3
+label IF_TRUE3
+push constant 100
+pop static 12
+label IF_FALSE3
+push static 13
+push constant 4
+eq
+if-goto IF_TRUE4
+goto IF_FALSE4
+label IF_TRUE4
+push constant 50
+pop static 12
+label IF_FALSE4
+label WHILE_EXP0
+push static 23
+not
+if-goto WHILE_END0
+push static 14
+push constant 25
+lt
+push static 11
+and
+push constant 0
+eq
+if-goto IF_TRUE5
+goto IF_FALSE5
+label IF_TRUE5
+push static 1
+call Main.padSlova1stup 1
+pop temp 0
+push static 12
+call Sys.wait 1
+pop temp 0
+push constant 1
+pop static 11
+label IF_FALSE5
+push static 33
+call Main.kbdProvjere 1
+pop temp 0
+push static 15
+push constant 25
+lt
+push static 11
+and
+push constant 1
+eq
+if-goto IF_TRUE6
+goto IF_FALSE6
+label IF_TRUE6
+push static 2
+call Main.padSlova2stup 1
+pop temp 0
+push static 12
+call Sys.wait 1
+pop temp 0
+push constant 2
+pop static 11
+label IF_FALSE6
+push static 33
+call Main.kbdProvjere 1
+pop temp 0
+push static 16
+push constant 25
+lt
+push static 11
+and
+push constant 2
+eq
+if-goto IF_TRUE7
+goto IF_FALSE7
+label IF_TRUE7
+push static 3
+call Main.padSlova3stup 1
+pop temp 0
+push static 12
+call Sys.wait 1
+pop temp 0
+push constant 3
+pop static 11
+label IF_FALSE7
+push static 33
+call Main.kbdProvjere 1
+pop temp 0
+push static 17
+push constant 25
+lt
+push static 11
+and
+push constant 3
+eq
+if-goto IF_TRUE8
+goto IF_FALSE8
+label IF_TRUE8
+push static 4
+call Main.padSlova4stup 1
+pop temp 0
+push static 12
+call Sys.wait 1
+pop temp 0
+push constant 4
+pop static 11
+label IF_FALSE8
+push static 33
+call Main.kbdProvjere 1
+pop temp 0
+push static 18
+push constant 25
+lt
+push static 11
+and
+push constant 4
+eq
+if-goto IF_TRUE9
+goto IF_FALSE9
+label IF_TRUE9
+push static 5
+call Main.padSlova5stup 1
+pop temp 0
+push static 12
+call Sys.wait 1
+pop temp 0
+push constant 5
+pop static 11
+label IF_FALSE9
+push static 33
+call Main.kbdProvjere 1
+pop temp 0
+push static 19
+push constant 25
+lt
+push static 11
+and
+push constant 5
+eq
+if-goto IF_TRUE10
+goto IF_FALSE10
+label IF_TRUE10
+push static 6
+call Main.padSlova6stup 1
+pop temp 0
+push static 12
+call Sys.wait 1
+pop temp 0
+push constant 6
+pop static 11
+label IF_FALSE10
+push static 33
+call Main.kbdProvjere 1
+pop temp 0
+push static 20
+push constant 25
+lt
+push static 11
+and
+push constant 6
+eq
+if-goto IF_TRUE11
+goto IF_FALSE11
+label IF_TRUE11
+push static 7
+call Main.padSlova7stup 1
+pop temp 0
+push static 12
+call Sys.wait 1
+pop temp 0
+push constant 7
+pop static 11
+label IF_FALSE11
+push static 33
+call Main.kbdProvjere 1
+pop temp 0
+push static 21
+push constant 25
+lt
+push static 11
+and
+push constant 7
+eq
+if-goto IF_TRUE12
+goto IF_FALSE12
+label IF_TRUE12
+push static 8
+call Main.padSlova8stup 1
+pop temp 0
+push static 12
+call Sys.wait 1
+pop temp 0
+push constant 8
+pop static 11
+label IF_FALSE12
+push static 33
+call Main.kbdProvjere 1
+pop temp 0
+push static 22
+push constant 25
+lt
+push static 11
+and
+push constant 8
+eq
+if-goto IF_TRUE13
+goto IF_FALSE13
+label IF_TRUE13
+push static 9
+call Main.padSlova9stup 1
+pop temp 0
+push static 12
+call Sys.wait 1
+pop temp 0
+push constant 0
+pop static 11
+label IF_FALSE13
+push static 33
+call Main.kbdProvjere 1
+pop temp 0
+goto WHILE_EXP0
+label WHILE_END0
+call Main.gameOver 0
+pop temp 0
+goto IF_END0
+label IF_FALSE0
+call Main.initStaticVars 0
+pop temp 0
+call Main.start 0
+pop temp 0
+call Main.printUI 0
+pop temp 0
+call Main.printScore 0
+pop temp 0
+label WHILE_EXP1
+push static 23
+not
+if-goto WHILE_END1
+push static 14
+push constant 25
+lt
+push static 11
+and
+push constant 0
+eq
+if-goto IF_TRUE14
+goto IF_FALSE14
+label IF_TRUE14
+push static 1
+call Main.padSlova1stup 1
+pop temp 0
+push static 12
+call Sys.wait 1
+pop temp 0
+push constant 1
+pop static 11
+label IF_FALSE14
+push static 33
+call Main.kbdProvjere 1
+pop temp 0
+push static 15
+push constant 25
+lt
+push static 11
+and
+push constant 1
+eq
+if-goto IF_TRUE15
+goto IF_FALSE15
+label IF_TRUE15
+push static 2
+call Main.padSlova2stup 1
+pop temp 0
+push static 12
+call Sys.wait 1
+pop temp 0
+push constant 2
+pop static 11
+label IF_FALSE15
+push static 33
+call Main.kbdProvjere 1
+pop temp 0
+push static 16
+push constant 25
+lt
+push static 11
+and
+push constant 2
+eq
+if-goto IF_TRUE16
+goto IF_FALSE16
+label IF_TRUE16
+push static 3
+call Main.padSlova3stup 1
+pop temp 0
+push static 12
+call Sys.wait 1
+pop temp 0
+push constant 3
+pop static 11
+label IF_FALSE16
+push static 33
+call Main.kbdProvjere 1
+pop temp 0
+push static 17
+push constant 25
+lt
+push static 11
+and
+push constant 3
+eq
+if-goto IF_TRUE17
+goto IF_FALSE17
+label IF_TRUE17
+push static 4
+call Main.padSlova4stup 1
+pop temp 0
+push static 12
+call Sys.wait 1
+pop temp 0
+push constant 4
+pop static 11
+label IF_FALSE17
+push static 33
+call Main.kbdProvjere 1
+pop temp 0
+push static 18
+push constant 25
+lt
+push static 11
+and
+push constant 4
+eq
+if-goto IF_TRUE18
+goto IF_FALSE18
+label IF_TRUE18
+push static 5
+call Main.padSlova5stup 1
+pop temp 0
+push static 12
+call Sys.wait 1
+pop temp 0
+push constant 5
+pop static 11
+label IF_FALSE18
+push static 33
+call Main.kbdProvjere 1
+pop temp 0
+push static 19
+push constant 25
+lt
+push static 11
+and
+push constant 5
+eq
+if-goto IF_TRUE19
+goto IF_FALSE19
+label IF_TRUE19
+push static 6
+call Main.padSlova6stup 1
+pop temp 0
+push static 12
+call Sys.wait 1
+pop temp 0
+push constant 6
+pop static 11
+label IF_FALSE19
+push static 33
+call Main.kbdProvjere 1
+pop temp 0
+push static 20
+push constant 25
+lt
+push static 11
+and
+push constant 6
+eq
+if-goto IF_TRUE20
+goto IF_FALSE20
+label IF_TRUE20
+push static 7
+call Main.padSlova7stup 1
+pop temp 0
+push static 12
+call Sys.wait 1
+pop temp 0
+push constant 7
+pop static 11
+label IF_FALSE20
+push static 33
+call Main.kbdProvjere 1
+pop temp 0
+push static 21
+push constant 25
+lt
+push static 11
+and
+push constant 7
+eq
+if-goto IF_TRUE21
+goto IF_FALSE21
+label IF_TRUE21
+push static 8
+call Main.padSlova8stup 1
+pop temp 0
+push static 12
+call Sys.wait 1
+pop temp 0
+push constant 8
+pop static 11
+label IF_FALSE21
+push static 33
+call Main.kbdProvjere 1
+pop temp 0
+push static 22
+push constant 25
+lt
+push static 11
+and
+push constant 8
+eq
+if-goto IF_TRUE22
+goto IF_FALSE22
+label IF_TRUE22
+push static 9
+call Main.padSlova9stup 1
+pop temp 0
+push static 12
+call Sys.wait 1
+pop temp 0
+push constant 0
+pop static 11
+label IF_FALSE22
+push static 33
+call Main.kbdProvjere 1
+pop temp 0
+goto WHILE_EXP1
+label WHILE_END1
+call Main.gameOver 0
+pop temp 0
+label IF_END0
+push constant 0
+return
+function Main.main 0
+call Main.initStaticVars 0
+pop temp 0
+call Main.loadingScreen 0
+pop temp 0
+call Main.start 0
+pop temp 0
+call Main.printUI 0
+pop temp 0
+call Main.printScore 0
+pop temp 0
+label WHILE_EXP0
+push static 23
+not
+if-goto WHILE_END0
+push static 14
+push constant 25
+lt
+push static 11
+and
+push constant 0
+eq
+if-goto IF_TRUE0
+goto IF_FALSE0
+label IF_TRUE0
+push static 1
+call Main.padSlova1stup 1
+pop temp 0
+push static 12
+call Sys.wait 1
+pop temp 0
+push constant 1
+pop static 11
+label IF_FALSE0
+push static 33
+call Main.kbdProvjere 1
+pop temp 0
+push static 15
+push constant 25
+lt
+push static 11
+and
+push constant 1
+eq
+if-goto IF_TRUE1
+goto IF_FALSE1
+label IF_TRUE1
+push static 2
+call Main.padSlova2stup 1
+pop temp 0
+push static 12
+call Sys.wait 1
+pop temp 0
+push constant 2
+pop static 11
+label IF_FALSE1
+push static 33
+call Main.kbdProvjere 1
+pop temp 0
+push static 16
+push constant 25
+lt
+push static 11
+and
+push constant 2
+eq
+if-goto IF_TRUE2
+goto IF_FALSE2
+label IF_TRUE2
+push static 3
+call Main.padSlova3stup 1
+pop temp 0
+push static 12
+call Sys.wait 1
+pop temp 0
+push constant 3
+pop static 11
+label IF_FALSE2
+push static 33
+call Main.kbdProvjere 1
+pop temp 0
+push static 17
+push constant 25
+lt
+push static 11
+and
+push constant 3
+eq
+if-goto IF_TRUE3
+goto IF_FALSE3
+label IF_TRUE3
+push static 4
+call Main.padSlova4stup 1
+pop temp 0
+push static 12
+call Sys.wait 1
+pop temp 0
+push constant 4
+pop static 11
+label IF_FALSE3
+push static 33
+call Main.kbdProvjere 1
+pop temp 0
+push static 18
+push constant 25
+lt
+push static 11
+and
+push constant 4
+eq
+if-goto IF_TRUE4
+goto IF_FALSE4
+label IF_TRUE4
+push static 5
+call Main.padSlova5stup 1
+pop temp 0
+push static 12
+call Sys.wait 1
+pop temp 0
+push constant 5
+pop static 11
+label IF_FALSE4
+push static 33
+call Main.kbdProvjere 1
+pop temp 0
+push static 19
+push constant 25
+lt
+push static 11
+and
+push constant 5
+eq
+if-goto IF_TRUE5
+goto IF_FALSE5
+label IF_TRUE5
+push static 6
+call Main.padSlova6stup 1
+pop temp 0
+push static 12
+call Sys.wait 1
+pop temp 0
+push constant 6
+pop static 11
+label IF_FALSE5
+push static 33
+call Main.kbdProvjere 1
+pop temp 0
+push static 20
+push constant 25
+lt
+push static 11
+and
+push constant 6
+eq
+if-goto IF_TRUE6
+goto IF_FALSE6
+label IF_TRUE6
+push static 7
+call Main.padSlova7stup 1
+pop temp 0
+push static 12
+call Sys.wait 1
+pop temp 0
+push constant 7
+pop static 11
+label IF_FALSE6
+push static 33
+call Main.kbdProvjere 1
+pop temp 0
+push static 21
+push constant 25
+lt
+push static 11
+and
+push constant 7
+eq
+if-goto IF_TRUE7
+goto IF_FALSE7
+label IF_TRUE7
+push static 8
+call Main.padSlova8stup 1
+pop temp 0
+push static 12
+call Sys.wait 1
+pop temp 0
+push constant 8
+pop static 11
+label IF_FALSE7
+push static 33
+call Main.kbdProvjere 1
+pop temp 0
+push static 22
+push constant 25
+lt
+push static 11
+and
+push constant 8
+eq
+if-goto IF_TRUE8
+goto IF_FALSE8
+label IF_TRUE8
+push static 9
+call Main.padSlova9stup 1
+pop temp 0
+push static 12
+call Sys.wait 1
+pop temp 0
+push constant 0
+pop static 11
+label IF_FALSE8
+push static 33
+call Main.kbdProvjere 1
+pop temp 0
+goto WHILE_EXP0
+label WHILE_END0
+call Main.gameOver 0
+pop temp 0
+push constant 0
+return

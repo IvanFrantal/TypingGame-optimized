@@ -1,0 +1,74 @@
+/* Random.jack
+ * By Mark Armbrust
+ * http://nand2tetris-questions-and-answers-forum.32033.n3.nabble.com/Random-number-generator-for-hack-cpu-td4025503.html
+ * Also see:
+ * http://nand2tetris-questions-and-answers-forum.32033.n3.nabble.com/Pseudo-Random-Number-Generator-td4026059.html#a4027617
+ */
+
+class Random {
+    static int seed;
+    
+    function void setSeed(int newSeed) {
+        let seed = newSeed;
+        return;
+    }
+
+    function int rand() {
+        /** return a random number in the range 0..32767 */
+        let seed = seed + 20251;
+        if (seed < 0) {
+            let seed = seed - 32767 - 1;
+        }
+        return seed;
+    }
+
+    function int randRange(int range) {
+        /** return a random number in the range 0..range */
+        var int mask;
+        var int ret;
+        let mask = 1;
+        while (mask < range) {
+            let mask = mask * 2 + 1;
+        }
+        let ret = Random.rand() & mask;
+        while (ret > range) {
+            let ret = Random.rand() & mask;
+        }
+        return ret;
+    }
+	
+// -------------------------------------------------------------
+// moj kod (dolje)
+// -------------------------------------------------------------
+	
+	
+	function int mojModulo(int dividenda, int djelitelj)
+	{
+		var int kvocjent, ostatak;
+	
+		if (djelitelj = 0)
+		{
+			do Output.printString("GRESKA: f-ja mojModulo -> djeljenje s 0");
+			do Sys.wait(5000);
+			return djelitelj;
+		}
+		
+		let kvocjent = Math.divide(dividenda, djelitelj);
+		let ostatak = Math.multiply(Math.multiply(djelitelj, kvocjent), -1) + dividenda;
+		
+		return ostatak;
+	}
+	
+	
+	
+	function int randRange65(int range) 
+	{
+		var int res;
+		
+		let res = Random.mojModulo(Random.rand(), (range - 65 + 1)) + 65;
+		
+		return res;
+    }
+	
+
+}

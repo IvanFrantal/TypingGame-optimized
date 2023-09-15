@@ -1,0 +1,1944 @@
+class Main
+{
+	static char kbdInput, slovo1, slovo2, slovo3, slovo4, slovo5, slovo6, slovo7, slovo8, slovo9;
+	static int score, changeStupci, waitDuration, difficulty, stupCnt1, stupCnt2, stupCnt3, stupCnt4, stupCnt5, stupCnt6, stupCnt7, stupCnt8, stupCnt9;
+	static bool GameLoopBool, stupBool1, stupBool2, stupBool3, stupBool4, stupBool5, stupBool6, stupBool7, stupBool8, stupBool9;
+	static Array skupSlova;
+	
+	static bool stupBool11, stupBool22, stupBool33, stupBool44, stupBool55, stupBool66, stupBool77, stupBool88, stupBool99;
+	
+	
+	
+	function void initStaticVars()
+	{
+		let score = 0;
+		let changeStupci = 0;
+		//let waitDuration = 0; // ovo mijenjas s obzirom na difficulty
+		let GameLoopBool = true;	
+		
+		
+		let slovo1 = Random.randRange65(90);
+		let stupBool1 = false;
+		let stupCnt1 = 1;
+		
+		let slovo2 = Random.randRange65(90);
+		let stupBool2 = false;
+		let stupCnt2 = 1;
+		
+		let slovo3 = Random.randRange65(90);
+		let stupBool3 = false;
+		let stupCnt3 = 1;
+		
+		let slovo4 = Random.randRange65(90);
+		let stupBool4 = false;
+		let stupCnt4 = 1;
+		
+		let slovo5 = Random.randRange65(90);
+		let stupBool5 = false;
+		let stupCnt5 = 1;
+		
+		let slovo6 = Random.randRange65(90);
+		let stupBool6 = false;
+		let stupCnt6 = 1;
+		
+		let slovo7 = Random.randRange65(90);
+		let stupBool7 = false;
+		let stupCnt7 = 1;
+		
+		let slovo8 = Random.randRange65(90);
+		let stupBool8 = false;
+		let stupCnt8 = 1;
+		
+		let slovo9 = Random.randRange65(90);
+		let stupBool9 = false;
+		let stupCnt9 = 1;
+		
+		let skupSlova = Array.new(9);
+		let skupSlova[0] = slovo1;
+		let skupSlova[1] = slovo2;
+		let skupSlova[2] = slovo3;
+		let skupSlova[3] = slovo4;
+		let skupSlova[4] = slovo5;
+		let skupSlova[5] = slovo6;
+		let skupSlova[6] = slovo7;
+		let skupSlova[7] = slovo8;
+		let skupSlova[8] = slovo9;
+		
+		let stupBool11 = false;
+		let stupBool22 = false;
+		let stupBool33= false;
+		let stupBool44= false;
+		let stupBool55= false;
+		let stupBool66= false;
+		let stupBool77= false;
+		let stupBool88= false;
+		let stupBool99= false;
+		
+		return;
+	}
+	
+	function void printScore()
+	{
+		do Output.moveCursor(1,2);
+		do Output.printString("Score: ");
+		do Output.printInt(score);
+		
+		return;
+	}
+	
+	function void printUI()
+	{
+		do Screen.drawRectangle(0,0,132,255);
+		do Screen.drawRectangle(377,0,511,255);
+		do Output.moveCursor(2,2);
+		if (difficulty = 1){do Output.printString("Diff: Easy");}
+		if (difficulty = 2){do Output.printString("Diff: Medium");}
+		if (difficulty = 3){do Output.printString("Diff: Hard");}
+		if (difficulty = 4){do Output.printString("Diff: NIGHMARE");}
+		
+		do Output.moveCursor(19,52);
+		do Output.printString(" TYPING ");
+		do Output.moveCursor(20,52);
+		do Output.printString("  GAME  ");
+		
+		return;
+	}
+	
+	function void padSlova1stup(char c)
+	{	
+		// do 21 idu slova ako prijede 21 onda je van ekrana a to je game over
+		if (stupCnt1 > 20) {let GameLoopBool = false;}
+		
+		//ispis slova i brisanje slova iznad
+		do Output.moveCursor(stupCnt1,18);
+		do Output.printChar(c);
+		do Output.moveCursor(stupCnt1 - 1,18);
+		do Output.printChar(32);
+		
+		//hvatanje inputa
+		if (Keyboard.keyPressed() = c)
+		{
+			//brisanje slova s ekrana
+			do Output.moveCursor(stupCnt1,18);
+			do Output.printChar(32);
+			
+			//odabir novog slova koje pada odozgo
+			let slovo1 = Random.randRange65(90);
+			let skupSlova[0] = slovo1;
+			let stupCnt1 = 1;
+			
+			let score = score + 1;
+			do Main.printScore();
+		}
+		
+		if (difficulty = 1)
+		{
+			if(stupCnt1 = 18 & ~stupBool11)
+			{
+				do Screen.setColor(false);
+				do Screen.drawRectangle(134,203, 159,228);
+				do Sys.wait(50);
+				do Screen.setColor(true);
+				do Screen.drawRectangle(134,203, 159,228);
+				do Sys.wait(50);
+				do Screen.setColor(false);
+				do Screen.drawRectangle(134,203, 159,228);
+				do Sys.wait(50);
+				do Screen.setColor(true);
+				do Screen.drawRectangle(134,203, 159,228);
+				do Sys.wait(50);
+				do Screen.setColor(false);
+				do Screen.drawRectangle(134,203, 159,228);
+				do Sys.wait(50);
+				do Screen.setColor(true);
+				do Screen.drawRectangle(134,203, 159,228);
+				do Sys.wait(50);
+				do Screen.setColor(false);
+				do Screen.drawRectangle(134,203, 159,228);
+				do Screen.setColor(true);
+				
+				do Output.moveCursor(stupCnt1,18);
+				do Output.printChar(32);
+				let slovo1 = Random.randRange65(90);
+				let skupSlova[0] = slovo1;
+				let stupCnt1 = 1;
+				
+				let stupBool11 = true;
+			}
+			if(stupCnt1 = 20 & ~stupBool1)
+			{
+				do Screen.setColor(false);
+				do Screen.drawRectangle(134,230, 159,255);
+				do Sys.wait(50);
+				do Screen.setColor(true);
+				do Screen.drawRectangle(134,230, 159,255);
+				do Sys.wait(50);
+				do Screen.setColor(false);
+				do Screen.drawRectangle(134,230, 159,255);
+				do Sys.wait(50);
+				do Screen.setColor(true);
+				do Screen.drawRectangle(134,230, 159,255);
+				do Sys.wait(50);
+				do Screen.setColor(false);
+				do Screen.drawRectangle(134,230, 159,255);
+				do Sys.wait(50);
+				do Screen.setColor(true);
+				do Screen.drawRectangle(134,230, 159,255);
+				do Sys.wait(50);
+				do Screen.setColor(false);
+				do Screen.drawRectangle(134,230, 159,255);
+				do Screen.setColor(true);
+
+				
+				
+				do Output.moveCursor(stupCnt1,18);
+				do Output.printChar(32);
+				let slovo1 = Random.randRange65(90);
+				let skupSlova[0] = slovo1;
+				let stupCnt1 = 1;
+				
+				let stupBool1 = true;
+			}
+		
+			if(~stupBool1){do Screen.drawRectangle(134,230, 159,255);}
+			if(~stupBool11){do Screen.drawRectangle(134,203, 159,228);}
+		}
+		if (difficulty = 2)
+		{
+			//hitbox kvadrata
+			if(stupCnt1 = 20 & ~stupBool1)
+			{
+				// brisanje kvadrata
+				do Screen.setColor(false);
+				do Screen.drawRectangle(134,230, 159,255);
+				do Sys.wait(50);
+				do Screen.setColor(true);
+				do Screen.drawRectangle(134,230, 159,255);
+				do Sys.wait(50);
+				do Screen.setColor(false);
+				do Screen.drawRectangle(134,230, 159,255);
+				do Sys.wait(50);
+				do Screen.setColor(true);
+				do Screen.drawRectangle(134,230, 159,255);
+				do Sys.wait(50);
+				do Screen.setColor(false);
+				do Screen.drawRectangle(134,230, 159,255);
+				do Sys.wait(50);
+				do Screen.setColor(true);
+				do Screen.drawRectangle(134,230, 159,255);
+				do Sys.wait(50);
+				do Screen.setColor(false);
+				do Screen.drawRectangle(134,230, 159,255);
+				do Screen.setColor(true);
+				
+				//odabir novog slova koje pada odozgo
+				do Output.moveCursor(stupCnt1,18);
+				do Output.printChar(32);
+				let slovo1 = Random.randRange65(90);
+				let skupSlova[0] = slovo1;
+				let stupCnt1 = 1;
+				
+				let stupBool1 = true;
+			}
+			
+			if(~stupBool1){do Screen.drawRectangle(134,230, 159,255);}
+		}
+		
+		let stupCnt1 = stupCnt1 + 1;
+		
+		if (waitDuration < 3) {let waitDuration = 50;}
+		
+		// ubrzava igru ;)
+		// u svakoj f-ji ubrzavam za drugaciji score zato sto ce se
+		// onda iz svake f-je primjeniti ubrzanje a hocu da to ubrzanje bude
+		// blago eksponencijalno s vremenom
+		if (score > 50){let waitDuration = waitDuration - 1;}
+		
+		return;
+	}
+	
+	function void padSlova2stup(char c)
+	{	
+		if (stupCnt2 > 20) {let GameLoopBool = false;}
+		
+		do Output.moveCursor(stupCnt2,21);
+		do Output.printChar(c);
+		do Output.moveCursor(stupCnt2 - 1,21);
+		do Output.printChar(32);
+		
+		if (Keyboard.keyPressed() = c)
+		{
+			do Output.moveCursor(stupCnt2,21);
+			do Output.printChar(32);
+			
+			let slovo2 = Random.randRange65(90);
+			let skupSlova[1] = slovo2;
+			let stupCnt2 = 1;
+			
+			let score = score + 1;
+			do Main.printScore();
+		}
+		
+		if (difficulty = 1)
+		{
+			if(stupCnt2 = 18 & ~stupBool22)
+			{
+				do Screen.setColor(false);
+				do Screen.drawRectangle(161,203, 186,228);
+				do Sys.wait(50);
+				do Screen.setColor(true);
+				do Screen.drawRectangle(161,203, 186,228);
+				do Sys.wait(50);
+				do Screen.setColor(false);
+				do Screen.drawRectangle(161,203, 186,228);
+				do Sys.wait(50);
+				do Screen.setColor(true);
+				do Screen.drawRectangle(161,203, 186,228);
+				do Sys.wait(50);
+				do Screen.setColor(false);
+				do Screen.drawRectangle(161,203, 186,228);
+				do Sys.wait(50);
+				do Screen.setColor(true);
+				do Screen.drawRectangle(161,203, 186,228);
+				do Sys.wait(50);
+				do Screen.setColor(false);
+				do Screen.drawRectangle(161,203, 186,228);
+				do Screen.setColor(true);
+				
+				do Output.moveCursor(stupCnt2,21);
+				do Output.printChar(32);
+				let slovo2 = Random.randRange65(90);
+				let skupSlova[1] = slovo2;
+				let stupCnt2 = 1;
+				
+				let stupBool22 = true;
+			}
+			if(stupCnt2 = 20 & ~stupBool2)
+			{
+				do Screen.setColor(false);
+				do Screen.drawRectangle(161,230, 186,255);
+				do Sys.wait(50);
+				do Screen.setColor(true);
+				do Screen.drawRectangle(161,230, 186,255);
+				do Sys.wait(50);
+				do Screen.setColor(false);
+				do Screen.drawRectangle(161,230, 186,255);
+				do Sys.wait(50);
+				do Screen.setColor(true);
+				do Screen.drawRectangle(161,230, 186,255);
+				do Sys.wait(50);
+				do Screen.setColor(false);
+				do Screen.drawRectangle(161,230, 186,255);
+				do Sys.wait(50);
+				do Screen.setColor(true);
+				do Screen.drawRectangle(161,230, 186,255);
+				do Sys.wait(50);
+				do Screen.setColor(false);
+				do Screen.drawRectangle(161,230, 186,255);
+				do Screen.setColor(true);
+				
+				do Output.moveCursor(stupCnt2,21);
+				do Output.printChar(32);
+				let slovo2 = Random.randRange65(90);
+				let skupSlova[1] = slovo2;
+				let stupCnt2 = 1;
+				
+				let stupBool2 = true;
+			}
+		
+			if(~stupBool2){do Screen.drawRectangle(161,230, 186,255);}
+			if(~stupBool22){do Screen.drawRectangle(161,203, 186,228);}
+		}
+		if (difficulty = 2)
+		{
+			if(stupCnt2 = 20 & ~stupBool2)
+			{
+				do Screen.setColor(false);
+				do Screen.drawRectangle(161,230, 186,255);
+				do Sys.wait(50);
+				do Screen.setColor(true);
+				do Screen.drawRectangle(161,230, 186,255);
+				do Sys.wait(50);
+				do Screen.setColor(false);
+				do Screen.drawRectangle(161,230, 186,255);
+				do Sys.wait(50);
+				do Screen.setColor(true);
+				do Screen.drawRectangle(161,230, 186,255);
+				do Sys.wait(50);
+				do Screen.setColor(false);
+				do Screen.drawRectangle(161,230, 186,255);
+				do Sys.wait(50);
+				do Screen.setColor(true);
+				do Screen.drawRectangle(161,230, 186,255);
+				do Sys.wait(50);
+				do Screen.setColor(false);
+				do Screen.drawRectangle(161,230, 186,255);
+				do Screen.setColor(true);
+				
+				do Output.moveCursor(stupCnt2,21);
+				do Output.printChar(32);
+				let slovo2 = Random.randRange65(90);
+				let skupSlova[1] = slovo2;
+				let stupCnt2 = 1;
+				
+				let stupBool2 = true;
+			}
+			if(~stupBool2){do Screen.drawRectangle(161,230, 186,255);}
+		}
+			
+		let stupCnt2 = stupCnt2 + 1;
+		
+		if (waitDuration < 3) {let waitDuration = 50;}
+		
+		if (score > 100){let waitDuration = waitDuration - 1;}
+		
+		return;
+	}
+
+	function void padSlova3stup(char c)
+	{	
+		if (stupCnt3 > 20) {let GameLoopBool = false;}
+		
+		do Output.moveCursor(stupCnt3,25);
+		do Output.printChar(c);
+		do Output.moveCursor(stupCnt3 - 1,25);
+		do Output.printChar(32);
+		
+		if (Keyboard.keyPressed() = c)
+		{
+			do Output.moveCursor(stupCnt3,25);
+			do Output.printChar(32);
+			
+			let slovo3 = Random.randRange65(90);
+			let skupSlova[2] = slovo3;
+			let stupCnt3 = 1;
+			
+			let score = score + 1;
+			do Main.printScore();
+		}		
+		
+		if (difficulty = 1)
+		{
+			if(stupCnt3 = 18 & ~stupBool33)
+			{
+				do Screen.setColor(false);
+				do Screen.drawRectangle(188,203, 213,228);
+				do Sys.wait(50);
+				do Screen.setColor(true);
+				do Screen.drawRectangle(188,203, 213,228);
+				do Sys.wait(50);
+				do Screen.setColor(false);
+				do Screen.drawRectangle(188,203, 213,228);
+				do Sys.wait(50);
+				do Screen.setColor(true);
+				do Screen.drawRectangle(188,203, 213,228);
+				do Sys.wait(50);
+				do Screen.setColor(false);
+				do Screen.drawRectangle(188,203, 213,228);
+				do Sys.wait(50);
+				do Screen.setColor(true);
+				do Screen.drawRectangle(188,203, 213,228);
+				do Sys.wait(50);
+				do Screen.setColor(false);
+				do Screen.drawRectangle(188,203, 213,228);
+				do Screen.setColor(true);
+				
+				do Output.moveCursor(stupCnt3,25);
+				do Output.printChar(32);
+				let slovo3 = Random.randRange65(90);
+				let skupSlova[2] = slovo3;
+				let stupCnt3 = 1;
+				
+				let stupBool33 = true;
+			}
+			if(stupCnt3 = 20 & ~stupBool3)
+			{
+				do Screen.setColor(false);
+				do Screen.drawRectangle(188,230, 213,255);
+				do Sys.wait(50);
+				do Screen.setColor(true);
+				do Screen.drawRectangle(188,230, 213,255);
+				do Sys.wait(50);
+				do Screen.setColor(false);
+				do Screen.drawRectangle(188,230, 213,255);
+				do Sys.wait(50);
+				do Screen.setColor(true);
+				do Screen.drawRectangle(188,230, 213,255);
+				do Sys.wait(50);
+				do Screen.setColor(false);
+				do Screen.drawRectangle(188,230, 213,255);
+				do Sys.wait(50);
+				do Screen.setColor(true);
+				do Screen.drawRectangle(188,230, 213,255);
+				do Sys.wait(50);
+				do Screen.setColor(false);
+				do Screen.drawRectangle(188,230, 213,255);
+				do Screen.setColor(true);
+				
+				do Output.moveCursor(stupCnt3,25);
+				do Output.printChar(32);
+				let slovo3 = Random.randRange65(90);
+				let skupSlova[2] = slovo3;
+				let stupCnt3 = 1;
+				
+				let stupBool3 = true;
+				
+			}
+			
+			if(~stupBool3){do Screen.drawRectangle(188,230, 213,255);}
+			if(~stupBool33){do Screen.drawRectangle(188,203, 213,228);}
+		}
+		if (difficulty = 2)
+		{
+			if(stupCnt3 = 20 & ~stupBool3)
+			{
+				do Screen.setColor(false);
+				do Screen.drawRectangle(188,230, 213,255);
+				do Sys.wait(50);
+				do Screen.setColor(true);
+				do Screen.drawRectangle(188,230, 213,255);
+				do Sys.wait(50);
+				do Screen.setColor(false);
+				do Screen.drawRectangle(188,230, 213,255);
+				do Sys.wait(50);
+				do Screen.setColor(true);
+				do Screen.drawRectangle(188,230, 213,255);
+				do Sys.wait(50);
+				do Screen.setColor(false);
+				do Screen.drawRectangle(188,230, 213,255);
+				do Sys.wait(50);
+				do Screen.setColor(true);
+				do Screen.drawRectangle(188,230, 213,255);
+				do Sys.wait(50);
+				do Screen.setColor(false);
+				do Screen.drawRectangle(188,230, 213,255);
+				do Screen.setColor(true);
+				
+				do Output.moveCursor(stupCnt3,25);
+				do Output.printChar(32);
+				let slovo3 = Random.randRange65(90);
+				let skupSlova[2] = slovo3;
+				let stupCnt3 = 1;
+				
+				let stupBool3 = true;
+				
+			}
+			
+			if(~stupBool3){do Screen.drawRectangle(188,230, 213,255);}
+		}
+			
+		let stupCnt3 = stupCnt3 + 1;
+		
+		if (waitDuration < 3) {let waitDuration = 50;}
+		
+		if (score > 150){let waitDuration = waitDuration - 1;}
+		
+		return;
+	}
+	
+	function void padSlova4stup(char c)
+	{	
+		if (stupCnt4 > 20) {let GameLoopBool = false;}
+		
+		do Output.moveCursor(stupCnt4,28);
+		do Output.printChar(c);
+		do Output.moveCursor(stupCnt4 - 1,28);
+		do Output.printChar(32);
+		
+		if (Keyboard.keyPressed() = c)
+		{
+			do Output.moveCursor(stupCnt4,28);
+			do Output.printChar(32);
+			
+			let slovo4 = Random.randRange65(90);
+			let skupSlova[3] = slovo4;
+			let stupCnt4 = 1;
+			
+			let score = score + 1;
+			do Main.printScore();
+		}
+		
+		if (difficulty = 1)
+		{
+			if(stupCnt4 = 18 & ~stupBool44)
+			{
+				do Screen.setColor(false);
+				do Screen.drawRectangle(215,203, 240,228);
+				do Sys.wait(50);
+				do Screen.setColor(true);
+				do Screen.drawRectangle(215,203, 240,228);
+				do Sys.wait(50);
+				do Screen.setColor(false);
+				do Screen.drawRectangle(215,203, 240,228);
+				do Sys.wait(50);
+				do Screen.setColor(true);
+				do Screen.drawRectangle(215,203, 240,228);
+				do Sys.wait(50);
+				do Screen.setColor(false);
+				do Screen.drawRectangle(215,203, 240,228);
+				do Sys.wait(50);
+				do Screen.setColor(true);
+				do Screen.drawRectangle(215,203, 240,228);
+				do Sys.wait(50);
+				do Screen.setColor(false);
+				do Screen.drawRectangle(215,203, 240,228);
+				do Screen.setColor(true);
+				
+				do Output.moveCursor(stupCnt4,28);
+				do Output.printChar(32);
+				let slovo4 = Random.randRange65(90);
+				let skupSlova[3] = slovo4;
+				let stupCnt4 = 1;
+				
+				let stupBool44 = true;
+			}
+			if(stupCnt4 = 20 & ~stupBool4)
+			{
+				do Screen.setColor(false);
+				do Screen.drawRectangle(215,230, 240,255);
+				do Sys.wait(50);
+				do Screen.setColor(true);
+				do Screen.drawRectangle(215,230, 240,255);
+				do Sys.wait(50);
+				do Screen.setColor(false);
+				do Screen.drawRectangle(215,230, 240,255);
+				do Sys.wait(50);
+				do Screen.setColor(true);
+				do Screen.drawRectangle(215,230, 240,255);
+				do Sys.wait(50);
+				do Screen.setColor(false);
+				do Screen.drawRectangle(215,230, 240,255);
+				do Sys.wait(50);
+				do Screen.setColor(true);
+				do Screen.drawRectangle(215,230, 240,255);
+				do Sys.wait(50);
+				do Screen.setColor(false);
+				do Screen.drawRectangle(215,230, 240,255);
+				do Screen.setColor(true);
+				
+				do Output.moveCursor(stupCnt4,28);
+				do Output.printChar(32);
+				let slovo4 = Random.randRange65(90);
+				let skupSlova[3] = slovo4;
+				let stupCnt4 = 1;
+				
+				let stupBool4 = true;
+				
+			}
+			
+			if(~stupBool4){do Screen.drawRectangle(215,230, 240,255);}
+			if(~stupBool44){do Screen.drawRectangle(215,203, 240,228);}
+		}
+		if (difficulty = 2)
+		{
+			if(stupCnt4 = 20 & ~stupBool4)
+			{
+				do Screen.setColor(false);
+				do Screen.drawRectangle(215,230, 240,255);
+				do Sys.wait(50);
+				do Screen.setColor(true);
+				do Screen.drawRectangle(215,230, 240,255);
+				do Sys.wait(50);
+				do Screen.setColor(false);
+				do Screen.drawRectangle(215,230, 240,255);
+				do Sys.wait(50);
+				do Screen.setColor(true);
+				do Screen.drawRectangle(215,230, 240,255);
+				do Sys.wait(50);
+				do Screen.setColor(false);
+				do Screen.drawRectangle(215,230, 240,255);
+				do Sys.wait(50);
+				do Screen.setColor(true);
+				do Screen.drawRectangle(215,230, 240,255);
+				do Sys.wait(50);
+				do Screen.setColor(false);
+				do Screen.drawRectangle(215,230, 240,255);
+				do Screen.setColor(true);
+				
+				do Output.moveCursor(stupCnt4,28);
+				do Output.printChar(32);
+				let slovo4 = Random.randRange65(90);
+				let skupSlova[3] = slovo4;
+				let stupCnt4 = 1;
+				
+				let stupBool4 = true;
+				
+			}
+			
+			if(~stupBool4){do Screen.drawRectangle(215,230, 240,255);}
+		}
+			
+		let stupCnt4 = stupCnt4 + 1;
+		
+		if (waitDuration < 3) {let waitDuration = 50;}
+		
+		if (score > 200){let waitDuration = waitDuration - 1;}
+		
+		return;
+	}
+	
+	function void padSlova5stup(char c)
+	{	
+		if (stupCnt5 > 20) {let GameLoopBool = false;}
+		
+		do Output.moveCursor(stupCnt5, 31);
+		do Output.printChar(c);
+		do Output.moveCursor(stupCnt5 - 1, 31);
+		do Output.printChar(32);
+		
+		if (Keyboard.keyPressed() = c)
+		{
+			do Output.moveCursor(stupCnt5, 31);
+			do Output.printChar(32);
+			
+			let slovo5 = Random.randRange65(90);
+			let skupSlova[4] = slovo5;
+			let stupCnt5 = 1;
+			
+			let score = score + 1;
+			do Main.printScore();
+		}
+		
+		if (difficulty = 1)
+		{
+			if(stupCnt5 = 18 & ~stupBool55)
+			{
+				do Screen.setColor(false);
+				do Screen.drawRectangle(242,203, 267,228);
+				do Sys.wait(50);
+				do Screen.setColor(true);
+				do Screen.drawRectangle(242,203, 267,228);
+				do Sys.wait(50);
+				do Screen.setColor(false);
+				do Screen.drawRectangle(242,203, 267,228);
+				do Sys.wait(50);
+				do Screen.setColor(true);
+				do Screen.drawRectangle(242,203, 267,228);
+				do Sys.wait(50);
+				do Screen.setColor(false);
+				do Screen.drawRectangle(242,203, 267,228);
+				do Sys.wait(50);
+				do Screen.setColor(true);
+				do Screen.drawRectangle(242,203, 267,228);
+				do Sys.wait(50);
+				do Screen.setColor(false);
+				do Screen.drawRectangle(242,203, 267,228);
+				do Screen.setColor(true);
+				
+				do Output.moveCursor(stupCnt5,31);
+				do Output.printChar(32);
+				let slovo5 = Random.randRange65(90);
+				let skupSlova[4] = slovo5;
+				let stupCnt5 = 1;
+				
+				let stupBool55 = true;
+			}
+			if(stupCnt5 = 20 & ~stupBool5)
+			{
+				do Screen.setColor(false);
+				do Screen.drawRectangle(242,230, 267,255);
+				do Sys.wait(50);
+				do Screen.setColor(true);
+				do Screen.drawRectangle(242,230, 267,255);
+				do Sys.wait(50);
+				do Screen.setColor(false);
+				do Screen.drawRectangle(242,230, 267,255);
+				do Sys.wait(50);
+				do Screen.setColor(true);
+				do Screen.drawRectangle(242,230, 267,255);
+				do Sys.wait(50);
+				do Screen.setColor(false);
+				do Screen.drawRectangle(242,230, 267,255);
+				do Sys.wait(50);
+				do Screen.setColor(true);
+				do Screen.drawRectangle(242,230, 267,255);
+				do Sys.wait(50);
+				do Screen.setColor(false);
+				do Screen.drawRectangle(242,230, 267,255);
+				do Screen.setColor(true);
+				
+				do Output.moveCursor(stupCnt5, 31);
+				do Output.printChar(32);
+				let slovo5 = Random.randRange65(90);
+				let skupSlova[4] = slovo5;
+				let stupCnt5 = 1;
+				
+				let stupBool5 = true;
+				
+			}
+			
+			if(~stupBool5){do Screen.drawRectangle(242,230, 267,255);}
+			if(~stupBool55){do Screen.drawRectangle(242,203, 267,228);}
+		}
+		if (difficulty = 2)
+		{
+			if(stupCnt5 = 20 & ~stupBool5)
+			{
+				do Screen.setColor(false);
+				do Screen.drawRectangle(242,230, 267,255);
+				do Sys.wait(50);
+				do Screen.setColor(true);
+				do Screen.drawRectangle(242,230, 267,255);
+				do Sys.wait(50);
+				do Screen.setColor(false);
+				do Screen.drawRectangle(242,230, 267,255);
+				do Sys.wait(50);
+				do Screen.setColor(true);
+				do Screen.drawRectangle(242,230, 267,255);
+				do Sys.wait(50);
+				do Screen.setColor(false);
+				do Screen.drawRectangle(242,230, 267,255);
+				do Sys.wait(50);
+				do Screen.setColor(true);
+				do Screen.drawRectangle(242,230, 267,255);
+				do Sys.wait(50);
+				do Screen.setColor(false);
+				do Screen.drawRectangle(242,230, 267,255);
+				do Screen.setColor(true);
+				
+				do Output.moveCursor(stupCnt5, 31);
+				do Output.printChar(32);
+				let slovo5 = Random.randRange65(90);
+				let skupSlova[4] = slovo5;
+				let stupCnt5 = 1;
+				
+				let stupBool5 = true;
+				
+			}
+			
+			if(~stupBool5){do Screen.drawRectangle(242,230, 267,255);}
+		}
+			
+		let stupCnt5 = stupCnt5 + 1;
+		
+		if (waitDuration < 3) {let waitDuration = 50;}
+		
+		if (score > 250){let waitDuration = waitDuration - 1;}
+		
+		return;
+	}
+	
+	function void padSlova6stup(char c)
+	{	
+		if (stupCnt6 > 20) {let GameLoopBool = false;}
+		
+		do Output.moveCursor(stupCnt6, 35);
+		do Output.printChar(c);
+		do Output.moveCursor(stupCnt6 - 1, 35);
+		do Output.printChar(32);
+		
+		if (Keyboard.keyPressed() = c)
+		{
+			do Output.moveCursor(stupCnt6, 35);
+			do Output.printChar(32);
+			
+			let slovo6 = Random.randRange65(90);
+			let skupSlova[5] = slovo6;
+			let stupCnt6 = 1;
+			
+			let score = score + 1;
+			do Main.printScore();
+		}
+		
+		if (difficulty = 1)
+		{
+			if(stupCnt6 = 18 & ~stupBool66)
+			{
+				do Screen.setColor(false);
+				do Screen.drawRectangle(269,203, 294,228);
+				do Sys.wait(50);
+				do Screen.setColor(true);
+				do Screen.drawRectangle(269,203, 294,228);
+				do Sys.wait(50);
+				do Screen.setColor(false);
+				do Screen.drawRectangle(269,203, 294,228);
+				do Sys.wait(50);
+				do Screen.setColor(true);
+				do Screen.drawRectangle(269,203, 294,228);
+				do Sys.wait(50);
+				do Screen.setColor(false);
+				do Screen.drawRectangle(269,203, 294,228);
+				do Sys.wait(50);
+				do Screen.setColor(true);
+				do Screen.drawRectangle(269,203, 294,228);
+				do Sys.wait(50);
+				do Screen.setColor(false);
+				do Screen.drawRectangle(269,203, 294,228);
+				do Screen.setColor(true);
+				
+				do Output.moveCursor(stupCnt6,35);
+				do Output.printChar(32);
+				let slovo6 = Random.randRange65(90);
+				let skupSlova[5] = slovo6;
+				let stupCnt6 = 1;
+				
+				let stupBool66 = true;
+			}
+			if(stupCnt6 = 20 & ~stupBool6)
+			{
+				do Screen.setColor(false);
+				do Screen.drawRectangle(269,230, 294,255);
+				do Sys.wait(50);
+				do Screen.setColor(true);
+				do Screen.drawRectangle(269,230, 294,255);
+				do Sys.wait(50);
+				do Screen.setColor(false);
+				do Screen.drawRectangle(269,230, 294,255);
+				do Sys.wait(50);
+				do Screen.setColor(true);
+				do Screen.drawRectangle(269,230, 294,255);
+				do Sys.wait(50);
+				do Screen.setColor(false);
+				do Screen.drawRectangle(269,230, 294,255);
+				do Sys.wait(50);
+				do Screen.setColor(true);
+				do Screen.drawRectangle(269,230, 294,255);
+				do Sys.wait(50);
+				do Screen.setColor(false);
+				do Screen.drawRectangle(269,230, 294,255);
+				do Screen.setColor(true);
+				
+				do Output.moveCursor(stupCnt6, 35);
+				do Output.printChar(32);
+				let slovo6 = Random.randRange65(90);
+				let skupSlova[5] = slovo6;
+				let stupCnt6 = 1;
+				
+				let stupBool6 = true;
+				
+			}
+			
+			if(~stupBool6){do Screen.drawRectangle(269,230, 294,255);}
+			if(~stupBool66){do Screen.drawRectangle(269,203, 294,228);}
+		}
+		if (difficulty = 2)
+		{
+			if(stupCnt6 = 20 & ~stupBool6)
+			{
+				do Screen.setColor(false);
+				do Screen.drawRectangle(269,230, 294,255);
+				do Sys.wait(50);
+				do Screen.setColor(true);
+				do Screen.drawRectangle(269,230, 294,255);
+				do Sys.wait(50);
+				do Screen.setColor(false);
+				do Screen.drawRectangle(269,230, 294,255);
+				do Sys.wait(50);
+				do Screen.setColor(true);
+				do Screen.drawRectangle(269,230, 294,255);
+				do Sys.wait(50);
+				do Screen.setColor(false);
+				do Screen.drawRectangle(269,230, 294,255);
+				do Sys.wait(50);
+				do Screen.setColor(true);
+				do Screen.drawRectangle(269,230, 294,255);
+				do Sys.wait(50);
+				do Screen.setColor(false);
+				do Screen.drawRectangle(269,230, 294,255);
+				do Screen.setColor(true);
+				
+				do Output.moveCursor(stupCnt6, 35);
+				do Output.printChar(32);
+				let slovo6 = Random.randRange65(90);
+				let skupSlova[5] = slovo6;
+				let stupCnt6 = 1;
+				
+				let stupBool6 = true;
+				
+			}
+			
+			if(~stupBool6){do Screen.drawRectangle(269,230, 294,255);}
+		}
+			
+		let stupCnt6 = stupCnt6 + 1;
+		
+		if (waitDuration < 3) {let waitDuration = 50;}
+		
+		if (score > 300){let waitDuration = waitDuration - 1;}
+		
+		return;
+	}
+	
+	function void padSlova7stup(char c)
+	{	
+		if (stupCnt7 > 20) {let GameLoopBool = false;}
+		
+		do Output.moveCursor(stupCnt7, 38);
+		do Output.printChar(c);
+		do Output.moveCursor(stupCnt7 - 1, 38);
+		do Output.printChar(32);
+		
+		if (Keyboard.keyPressed() = c)
+		{
+			do Output.moveCursor(stupCnt7, 38);
+			do Output.printChar(32);
+			
+			let slovo7 = Random.randRange65(90);
+			let skupSlova[6] = slovo7;
+			let stupCnt7 = 1;
+			
+			let score = score + 1;
+			do Main.printScore();
+		}
+		
+		if (difficulty = 1)
+		{
+			if(stupCnt7 = 18 & ~stupBool77)
+			{
+				do Screen.setColor(false);
+				do Screen.drawRectangle(296,203, 321,228);
+				do Sys.wait(50);
+				do Screen.setColor(true);
+				do Screen.drawRectangle(296,203, 321,228);
+				do Sys.wait(50);
+				do Screen.setColor(false);
+				do Screen.drawRectangle(296,203, 321,228);
+				do Sys.wait(50);
+				do Screen.setColor(true);
+				do Screen.drawRectangle(296,203, 321,228);
+				do Sys.wait(50);
+				do Screen.setColor(false);
+				do Screen.drawRectangle(296,203, 321,228);
+				do Sys.wait(50);
+				do Screen.setColor(true);
+				do Screen.drawRectangle(296,203, 321,228);
+				do Sys.wait(50);
+				do Screen.setColor(false);
+				do Screen.drawRectangle(296,203, 321,228);
+				do Screen.setColor(true);
+				
+				do Output.moveCursor(stupCnt7,38);
+				do Output.printChar(32);
+				let slovo7 = Random.randRange65(90);
+				let skupSlova[6] = slovo7;
+				let stupCnt7 = 1;
+				
+				let stupBool77 = true;
+			}
+			if(stupCnt7 = 20 & ~stupBool7)
+			{
+				do Screen.setColor(false);
+				do Screen.drawRectangle(296,230, 321,255);
+				do Sys.wait(50);
+				do Screen.setColor(true);
+				do Screen.drawRectangle(296,230, 321,255);
+				do Sys.wait(50);
+				do Screen.setColor(false);
+				do Screen.drawRectangle(296,230, 321,255);
+				do Sys.wait(50);
+				do Screen.setColor(true);
+				do Screen.drawRectangle(296,230, 321,255);
+				do Sys.wait(50);
+				do Screen.setColor(false);
+				do Screen.drawRectangle(296,230, 321,255);
+				do Sys.wait(50);
+				do Screen.setColor(true);
+				do Screen.drawRectangle(296,230, 321,255);
+				do Sys.wait(50);
+				do Screen.setColor(false);
+				do Screen.drawRectangle(296,230, 321,255);
+				do Screen.setColor(true);
+				
+				do Output.moveCursor(stupCnt7, 38);
+				do Output.printChar(32);
+				let slovo7 = Random.randRange65(90);
+				let skupSlova[6] = slovo7;
+				let stupCnt7 = 1;
+				
+				let stupBool7 = true;
+				
+			}
+			
+			if(~stupBool7){do Screen.drawRectangle(296,230, 321,255);}
+			if(~stupBool77){do Screen.drawRectangle(296,203, 321,228);}
+		}
+		if (difficulty = 2)
+		{
+			if(stupCnt7 = 20 & ~stupBool7)
+			{
+				do Screen.setColor(false);
+				do Screen.drawRectangle(296,230, 321,255);
+				do Sys.wait(50);
+				do Screen.setColor(true);
+				do Screen.drawRectangle(296,230, 321,255);
+				do Sys.wait(50);
+				do Screen.setColor(false);
+				do Screen.drawRectangle(296,230, 321,255);
+				do Sys.wait(50);
+				do Screen.setColor(true);
+				do Screen.drawRectangle(296,230, 321,255);
+				do Sys.wait(50);
+				do Screen.setColor(false);
+				do Screen.drawRectangle(296,230, 321,255);
+				do Sys.wait(50);
+				do Screen.setColor(true);
+				do Screen.drawRectangle(296,230, 321,255);
+				do Sys.wait(50);
+				do Screen.setColor(false);
+				do Screen.drawRectangle(296,230, 321,255);
+				do Screen.setColor(true);
+				
+				do Output.moveCursor(stupCnt7, 38);
+				do Output.printChar(32);
+				let slovo7 = Random.randRange65(90);
+				let skupSlova[6] = slovo7;
+				let stupCnt7 = 1;
+				
+				let stupBool7 = true;
+				
+			}
+			
+			if(~stupBool7){do Screen.drawRectangle(296,230, 321,255);}
+		}
+			
+		let stupCnt7 = stupCnt7 + 1;
+		
+		if (waitDuration < 3) {let waitDuration = 50;}
+		
+		if (score > 350){let waitDuration = waitDuration - 1;}
+		
+		return;
+	}
+	
+	function void padSlova8stup(char c)
+	{	
+		if (stupCnt8 > 20) {let GameLoopBool = false;}
+		
+		do Output.moveCursor(stupCnt8, 42);
+		do Output.printChar(c);
+		do Output.moveCursor(stupCnt8 - 1, 42);
+		do Output.printChar(32);
+		
+		if (Keyboard.keyPressed() = c)
+		{
+			do Output.moveCursor(stupCnt8, 42);
+			do Output.printChar(32);
+			
+			let slovo8 = Random.randRange65(90);
+			let skupSlova[7] = slovo8;
+			let stupCnt8 = 1;
+			
+			let score = score + 1;
+			do Main.printScore();
+		}
+		
+		if (difficulty = 1)
+		{
+			if(stupCnt8 = 18 & ~stupBool88)
+			{
+				do Screen.setColor(false);
+				do Screen.drawRectangle(323,203, 348,228);
+				do Sys.wait(50);
+				do Screen.setColor(true);
+				do Screen.drawRectangle(323,203, 348,228);
+				do Sys.wait(50);
+				do Screen.setColor(false);
+				do Screen.drawRectangle(323,203, 348,228);
+				do Sys.wait(50);
+				do Screen.setColor(true);
+				do Screen.drawRectangle(323,203, 348,228);
+				do Sys.wait(50);
+				do Screen.setColor(false);
+				do Screen.drawRectangle(323,203, 348,228);
+				do Sys.wait(50);
+				do Screen.setColor(true);
+				do Screen.drawRectangle(323,203, 348,228);
+				do Sys.wait(50);
+				do Screen.setColor(false);
+				do Screen.drawRectangle(323,203, 348,228);
+				do Screen.setColor(true);
+				
+				do Output.moveCursor(stupCnt8, 42);
+				do Output.printChar(32);
+				let slovo8 = Random.randRange65(90);
+				let skupSlova[7] = slovo8;
+				let stupCnt8 = 1;
+				
+				let stupBool88 = true;
+			}
+			if(stupCnt8 = 20 & ~stupBool8)
+			{
+				do Screen.setColor(false);
+				do Screen.drawRectangle(323,230, 348,255);
+				do Sys.wait(50);
+				do Screen.setColor(true);
+				do Screen.drawRectangle(323,230, 348,255);
+				do Sys.wait(50);
+				do Screen.setColor(false);
+				do Screen.drawRectangle(323,230, 348,255);
+				do Sys.wait(50);
+				do Screen.setColor(true);
+				do Screen.drawRectangle(323,230, 348,255);
+				do Sys.wait(50);
+				do Screen.setColor(false);
+				do Screen.drawRectangle(323,230, 348,255);
+				do Sys.wait(50);
+				do Screen.setColor(true);
+				do Screen.drawRectangle(323,230, 348,255);
+				do Sys.wait(50);
+				do Screen.setColor(false);
+				do Screen.drawRectangle(323,230, 348,255);
+				do Screen.setColor(true);
+				
+				do Output.moveCursor(stupCnt8, 42);
+				do Output.printChar(32);
+				let slovo8 = Random.randRange65(90);
+				let skupSlova[7] = slovo8;
+				let stupCnt8 = 1;
+				
+				let stupBool8 = true;
+				
+			}
+			
+			if(~stupBool8){do Screen.drawRectangle(323,230, 348,255);}
+			if(~stupBool88){do Screen.drawRectangle(323,203, 348,228);}
+		}
+		if (difficulty = 2)
+		{
+			if(stupCnt8 = 20 & ~stupBool8)
+			{
+				do Screen.setColor(false);
+				do Screen.drawRectangle(323,230, 348,255);
+				do Sys.wait(50);
+				do Screen.setColor(true);
+				do Screen.drawRectangle(323,230, 348,255);
+				do Sys.wait(50);
+				do Screen.setColor(false);
+				do Screen.drawRectangle(323,230, 348,255);
+				do Sys.wait(50);
+				do Screen.setColor(true);
+				do Screen.drawRectangle(323,230, 348,255);
+				do Sys.wait(50);
+				do Screen.setColor(false);
+				do Screen.drawRectangle(323,230, 348,255);
+				do Sys.wait(50);
+				do Screen.setColor(true);
+				do Screen.drawRectangle(323,230, 348,255);
+				do Sys.wait(50);
+				do Screen.setColor(false);
+				do Screen.drawRectangle(323,230, 348,255);
+				do Screen.setColor(true);
+				
+				do Output.moveCursor(stupCnt8, 42);
+				do Output.printChar(32);
+				let slovo8 = Random.randRange65(90);
+				let skupSlova[7] = slovo8;
+				let stupCnt8 = 1;
+				
+				let stupBool8 = true;
+				
+			}
+			
+			if(~stupBool8){do Screen.drawRectangle(323,230, 348,255);}
+		}
+			
+		let stupCnt8 = stupCnt8 + 1;
+		
+		if (waitDuration < 3) {let waitDuration = 50;}
+		
+		if (score > 400){let waitDuration = waitDuration - 1;}
+		
+		return;
+	}
+	
+	function void padSlova9stup(char c)
+	{	
+		if (stupCnt9 > 20) {let GameLoopBool = false;}
+		
+		do Output.moveCursor(stupCnt9, 45);
+		do Output.printChar(c);
+		do Output.moveCursor(stupCnt9 - 1, 45);
+		do Output.printChar(32);
+		
+		if (Keyboard.keyPressed() = c)
+		{
+			do Output.moveCursor(stupCnt9, 45);
+			do Output.printChar(32);
+			
+			let slovo9 = Random.randRange65(90);
+			let skupSlova[8] = slovo9;
+			let stupCnt9 = 1;
+			
+			let score = score + 1;
+			do Main.printScore();
+		}
+		
+		if (difficulty = 1)
+		{
+			if(stupCnt9 = 18 & ~stupBool99)
+			{
+				do Screen.setColor(false);
+				do Screen.drawRectangle(350,203, 375,228);
+				do Sys.wait(50);
+				do Screen.setColor(true);
+				do Screen.drawRectangle(350,203, 375,228);
+				do Sys.wait(50);
+				do Screen.setColor(false);
+				do Screen.drawRectangle(350,203, 375,228);
+				do Sys.wait(50);
+				do Screen.setColor(true);
+				do Screen.drawRectangle(350,203, 375,228);
+				do Sys.wait(50);
+				do Screen.setColor(false);
+				do Screen.drawRectangle(350,203, 375,228);
+				do Sys.wait(50);
+				do Screen.setColor(true);
+				do Screen.drawRectangle(350,203, 375,228);
+				do Sys.wait(50);
+				do Screen.setColor(false);
+				do Screen.drawRectangle(350,203, 375,228);
+				do Screen.setColor(true);
+				
+				do Output.moveCursor(stupCnt9, 45);
+				do Output.printChar(32);
+				let slovo9 = Random.randRange65(90);
+				let skupSlova[8] = slovo9;
+				let stupCnt9 = 1;
+				
+				let stupBool99 = true;
+			}
+			if(stupCnt9 = 20 & ~stupBool9)
+			{
+				do Screen.setColor(false);
+				do Screen.drawRectangle(350,230, 375,255);
+				do Sys.wait(50);
+				do Screen.setColor(true);
+				do Screen.drawRectangle(350,230, 375,255);
+				do Sys.wait(50);
+				do Screen.setColor(false);
+				do Screen.drawRectangle(350,230, 375,255);
+				do Sys.wait(50);
+				do Screen.setColor(true);
+				do Screen.drawRectangle(350,230, 375,255);
+				do Sys.wait(50);
+				do Screen.setColor(false);
+				do Screen.drawRectangle(350,230, 375,255);
+				do Sys.wait(50);
+				do Screen.setColor(true);
+				do Screen.drawRectangle(350,230, 375,255);
+				do Sys.wait(50);
+				do Screen.setColor(false);
+				do Screen.drawRectangle(350,230, 375,255);
+				do Screen.setColor(true);
+				
+				do Output.moveCursor(stupCnt9, 45);
+				do Output.printChar(32);
+				let slovo9 = Random.randRange65(90);
+				let skupSlova[8] = slovo9;
+				let stupCnt9 = 1;
+				
+				let stupBool9 = true;
+				
+			}
+			
+			if(~stupBool9){do Screen.drawRectangle(350,230, 375,255);}
+			if(~stupBool99){do Screen.drawRectangle(350,203, 375,228);}
+		}
+		if (difficulty = 2)
+		{
+			if(stupCnt9 = 20 & ~stupBool9)
+			{
+				do Screen.setColor(false);
+				do Screen.drawRectangle(350,230, 375,255);
+				do Sys.wait(50);
+				do Screen.setColor(true);
+				do Screen.drawRectangle(350,230, 375,255);
+				do Sys.wait(50);
+				do Screen.setColor(false);
+				do Screen.drawRectangle(350,230, 375,255);
+				do Sys.wait(50);
+				do Screen.setColor(true);
+				do Screen.drawRectangle(350,230, 375,255);
+				do Sys.wait(50);
+				do Screen.setColor(false);
+				do Screen.drawRectangle(350,230, 375,255);
+				do Sys.wait(50);
+				do Screen.setColor(true);
+				do Screen.drawRectangle(350,230, 375,255);
+				do Sys.wait(50);
+				do Screen.setColor(false);
+				do Screen.drawRectangle(350,230, 375,255);
+				do Screen.setColor(true);
+				
+				do Output.moveCursor(stupCnt9, 45);
+				do Output.printChar(32);
+				let slovo9 = Random.randRange65(90);
+				let skupSlova[8] = slovo9;
+				let stupCnt9 = 1;
+				
+				let stupBool9 = true;
+				
+			}
+			
+			if(~stupBool9){do Screen.drawRectangle(350,230, 375,255);}
+		}
+			
+		let stupCnt9 = stupCnt9 + 1;
+		
+		if (waitDuration < 3) {let waitDuration = 50;}
+		
+		if (score > 450){let waitDuration = waitDuration - 1;}
+		
+		return;
+	}
+	
+	function void kbdProvjere(Array skupSlova){
+		if (Keyboard.keyPressed() = skupSlova[0])
+		{
+			//brisanje slova s ekrana
+			do Output.moveCursor(stupCnt1-1,18);
+			do Output.moveCursor(stupCnt1,18);
+			//do Output.moveCursor(stupCnt1+1,18);
+			do Output.printChar(32);
+			
+			//odabir novog slova koje pada odozgo
+			let slovo1 = Random.randRange65(90);
+			let skupSlova[0] = slovo1;
+			let stupCnt1 = 1;
+			
+			let score = score + 1;
+			do Main.printScore();
+		}
+		if (Keyboard.keyPressed() = skupSlova[1])
+		{
+			do Output.moveCursor(stupCnt2-1,21);
+			do Output.moveCursor(stupCnt2,21);
+			//do Output.moveCursor(stupCnt2+1,21);
+			do Output.printChar(32);
+			
+			let slovo2 = Random.randRange65(90);
+			let skupSlova[1] = slovo2;
+			let stupCnt2 = 1;
+			
+			let score = score + 1;
+			do Main.printScore();
+		}
+		if (Keyboard.keyPressed() = skupSlova[2])
+		{
+			do Output.moveCursor(stupCnt3-1,25);
+			do Output.moveCursor(stupCnt3,25);
+			//do Output.moveCursor(stupCnt3+1,25);
+			do Output.printChar(32);
+			
+			let slovo3 = Random.randRange65(90);
+			let skupSlova[2] = slovo3;
+			let stupCnt3 = 1;
+			
+			let score = score + 1;
+			do Main.printScore();
+		}
+		if (Keyboard.keyPressed() = skupSlova[3])
+		{
+			do Output.moveCursor(stupCnt4-1,28);
+			do Output.moveCursor(stupCnt4,28);
+			//do Output.moveCursor(stupCnt4+1,28);
+			do Output.printChar(32);
+			
+			let slovo4 = Random.randRange65(90);
+			let skupSlova[3] = slovo4;
+			let stupCnt4 = 1;
+			
+			let score = score + 1;
+			do Main.printScore();
+		}
+		if (Keyboard.keyPressed() = skupSlova[4])
+		{
+			do Output.moveCursor(stupCnt5-1, 31);
+			do Output.moveCursor(stupCnt5, 31);
+			//do Output.moveCursor(stupCnt5+1, 31);
+			do Output.printChar(32);
+			
+			let slovo5 = Random.randRange65(90);
+			let skupSlova[4] = slovo5;
+			let stupCnt5 = 1;
+			
+			let score = score + 1;
+			do Main.printScore();
+		}
+		if (Keyboard.keyPressed() = skupSlova[5])
+		{
+			do Output.moveCursor(stupCnt6-1, 35);
+			do Output.moveCursor(stupCnt6, 35);
+			//do Output.moveCursor(stupCnt6+1, 35);
+			do Output.printChar(32);
+			
+			let slovo6 = Random.randRange65(90);
+			let skupSlova[5] = slovo6;
+			let stupCnt6 = 1;
+			
+			let score = score + 1;
+			do Main.printScore();
+		}
+		if (Keyboard.keyPressed() = skupSlova[6])
+		{
+			do Output.moveCursor(stupCnt7-1, 38);
+			do Output.moveCursor(stupCnt7, 38);
+			//do Output.moveCursor(stupCnt7+1, 38);
+			do Output.printChar(32);
+			
+			let slovo7 = Random.randRange65(90);
+			let skupSlova[6] = slovo7;
+			let stupCnt7 = 1;
+			
+			let score = score + 1;
+			do Main.printScore();
+		}
+		if (Keyboard.keyPressed() = skupSlova[7])
+		{
+			do Output.moveCursor(stupCnt8-1, 42);
+			do Output.moveCursor(stupCnt8, 42);
+			//do Output.moveCursor(stupCnt8+1, 42);
+			do Output.printChar(32);
+			
+			let slovo8 = Random.randRange65(90);
+			let skupSlova[7] = slovo8;
+			let stupCnt8 = 1;
+			
+			let score = score + 1;
+			do Main.printScore();
+		}
+		if (Keyboard.keyPressed() = skupSlova[8])
+		{
+			do Output.moveCursor(stupCnt9-1, 45);
+			do Output.moveCursor(stupCnt9, 45);
+			//do Output.moveCursor(stupCnt9+1, 45);
+			do Output.printChar(32);
+			
+			let slovo9 = Random.randRange65(90);
+			let skupSlova[8] = slovo9;
+			let stupCnt9 = 1;
+			
+			let score = score + 1;
+			do Main.printScore();
+		}
+		
+		return;
+	}
+	
+	function void start()
+	{
+		do Output.moveCursor(2,21);
+		do Output.printString("TYPING ");
+		do Sys.wait(400);
+		do Output.printString("GAME ");
+		do Sys.wait(400);
+		do Output.printString("DELUXE");
+		do Sys.wait(400);
+		
+		do Output.moveCursor(5,15);
+		do Output.printString("Select difficulty: [number]");
+		do Sys.wait(200);
+		do Output.moveCursor(7,18);
+		do Output.printString("1 -> EASY");
+		do Sys.wait(200);
+		do Output.moveCursor(8,18);
+		do Output.printString("2 -> MEDIUM");
+		do Sys.wait(200);
+		do Output.moveCursor(9,18);
+		do Output.printString("3 -> HARD");
+		do Sys.wait(200);
+		do Output.moveCursor(10,18);
+		do Output.printString("4 -> NIGHMARE");
+		do Sys.wait(200);
+		do Output.moveCursor(13,15);
+		let difficulty = Keyboard.readInt("Enter difficulty: ");	
+		
+		
+		do Screen.clearScreen();
+		
+		
+		if (difficulty = 0) {
+			do Screen.clearScreen();
+			do GUI.easterEgg();
+			
+		
+			do Screen.clearScreen();
+			do Main.start();
+			
+			//do Sys.halt();
+		}
+		
+		if ((difficulty > 0) & (difficulty < 5))
+		{
+			if (difficulty = 1){
+				let waitDuration = 150;
+				// medium 2 reda, waitDuration = 150
+			}
+			if (difficulty = 2){
+				let waitDuration = 100;
+				// hard = 1 red (to vec imas) waitDuration = 100
+			}
+			if (difficulty = 3){
+				let waitDuration = 100;
+				// nightmare nema kvadratica i waitDuration je kao hard
+			}
+			if (difficulty = 4){
+				let waitDuration = 50;
+				// nightmare nema kvadratica
+			}
+			
+		}
+		else
+		{	
+			do Screen.clearScreen();
+			do Output.moveCursor(8,5);
+			do Output.printString("Difficulty can be set from 1 (Easiest) to 4 (Hardest)");
+			do Sys.wait(4000);
+			do Screen.clearScreen();
+			do Main.start();
+		}
+		
+		return;
+	}
+	
+	function void loadingScreen()
+	{
+		var int i, j;
+		
+		let i = 7;
+		let j = 0;
+	
+		do Screen.drawRectangle(134,230, 159,255);
+		do Screen.drawRectangle(188,230, 213,255);
+		do Screen.drawRectangle(215,230, 240,255);
+		do Screen.drawRectangle(242,230, 267,255);
+		do Screen.drawRectangle(269,230, 294,255);
+		do Screen.drawRectangle(296,230, 321,255);
+		do Screen.drawRectangle(323,230, 348,255);
+		do Screen.drawRectangle(350,230, 375,255);
+
+		do Screen.drawRectangle(134,203, 159,228);
+		do Screen.drawRectangle(215,203, 240,228);
+		do Screen.drawRectangle(269,203, 294,228);
+		do Screen.drawRectangle(350,203, 375,228);
+		
+		
+		
+		while (i < 13){
+		
+		do Output.moveCursor(i,18);
+		do Output.printChar(84);
+		do Sys.wait(100);
+		do Output.moveCursor(i-1,18);
+		do Output.printChar(32);
+		
+		do Output.moveCursor(i+1,21);
+		do Output.printChar(89);
+		do Sys.wait(100);
+		do Output.moveCursor(i,21);
+		do Output.printChar(32);
+		
+		do Output.moveCursor(i-1,25);
+		do Output.printChar(80);
+		do Sys.wait(100);
+		do Output.moveCursor(i-2,25);
+		do Output.printChar(32);
+		
+		do Output.moveCursor(i+2,28);
+		do Output.printChar(73);
+		do Sys.wait(100);
+		do Output.moveCursor(i+1,28);
+		do Output.printChar(32);
+		
+		do Output.moveCursor(i-1,31);
+		do Output.printChar(78);
+		do Sys.wait(100);
+		do Output.moveCursor(i-2,31);
+		do Output.printChar(32);
+		
+		do Output.moveCursor(i,35);
+		do Output.printChar(71);
+		do Sys.wait(100);
+		do Output.moveCursor(i-1,35);
+		do Output.printChar(32);
+		
+		do Output.moveCursor(i-2,38);
+		do Output.printChar(65);
+		do Sys.wait(100);
+		do Output.moveCursor(i-3,38);
+		do Output.printChar(32);
+		
+		do Output.moveCursor(i+1,42);
+		do Output.printChar(77);
+		do Sys.wait(100);
+		do Output.moveCursor(i,42);
+		do Output.printChar(32);
+		
+		do Output.moveCursor(i+2,45);
+		do Output.printChar(69);
+		do Sys.wait(100);
+		do Output.moveCursor(i+1,45);
+		do Output.printChar(32);
+		
+		let i = i + 1;
+		}
+		
+		do Screen.clearScreen();
+		
+		return;
+	}
+	
+	function void gameOver()
+	{
+		var char odabir;
+	
+		do skupSlova.dispose();
+		
+		do Screen.clearScreen();
+		do Main.printUI();
+		do Output.moveCursor(10,28);
+		do Output.printString("GAME OVER");
+		do Sys.wait(300);
+		do Screen.clearScreen();
+		do Main.printUI();
+		do Sys.wait(300);
+		do Output.moveCursor(10,28);
+		do Output.printString("GAME OVER");
+		do Sys.wait(300);
+		do Screen.clearScreen();
+		do Main.printUI();
+		do Sys.wait(300);
+		do Output.moveCursor(10,28);
+		do Output.printString("GAME OVER");
+		do Sys.wait(300);
+		do Screen.clearScreen();
+		do Main.printUI();
+		do Sys.wait(300);
+		do Output.moveCursor(10,28);
+		do Output.printString("GAME OVER");
+		
+		do Output.moveCursor(12,28);
+		do Output.printString("Score: ");
+		do Output.printInt(score);
+		
+		do Sys.wait(3500);	
+		//do Sys.halt();
+		
+		
+		do Screen.clearScreen();
+		do Screen.drawRectangle(0,0,132,255);
+		do Screen.drawRectangle(377,0,511,255);
+		do Output.moveCursor(10,22);
+		do Output.printString("Try again? [Y/N]: ");
+		let odabir = Keyboard.readChar();
+		do Screen.clearScreen();
+		
+		if (odabir = 89){
+			do Main.initStaticVars();
+			do Main.printUI();
+			do Main.printScore();
+			
+			if (difficulty = 1){let waitDuration = 150;}
+			if (difficulty = 2){let waitDuration = 100;}
+			if (difficulty = 3){let waitDuration = 100;}
+			if (difficulty = 4){let waitDuration = 50;}
+			
+			while(GameLoopBool){
+				if (stupCnt1 < 25 & changeStupci = 0){
+					do Main.padSlova1stup(slovo1);
+					do Sys.wait(waitDuration);
+					let changeStupci = 1;
+				
+				}
+				//provjere izmedu za bolju responzivnost
+				do Main.kbdProvjere(skupSlova);
+				
+				if (stupCnt2 < 25 & changeStupci = 1){
+					do Main.padSlova2stup(slovo2);
+					do Sys.wait(waitDuration);
+					let changeStupci = 2;
+				}
+				do Main.kbdProvjere(skupSlova);
+				if (stupCnt3 < 25 & changeStupci = 2){
+					do Main.padSlova3stup(slovo3);
+					do Sys.wait(waitDuration);
+					let changeStupci = 3;
+				}
+				do Main.kbdProvjere(skupSlova);
+				if (stupCnt4 < 25 & changeStupci = 3){
+					do Main.padSlova4stup(slovo4);
+					do Sys.wait(waitDuration);
+					let changeStupci = 4;
+				}
+				do Main.kbdProvjere(skupSlova);
+				if (stupCnt5 < 25 & changeStupci = 4){
+					do Main.padSlova5stup(slovo5);
+					do Sys.wait(waitDuration);
+					let changeStupci = 5;
+				}
+				do Main.kbdProvjere(skupSlova);
+				if (stupCnt6 < 25 & changeStupci = 5){
+					do Main.padSlova6stup(slovo6);
+					do Sys.wait(waitDuration);
+					let changeStupci = 6;
+				}
+				do Main.kbdProvjere(skupSlova);
+				if (stupCnt7 < 25 & changeStupci = 6){
+					do Main.padSlova7stup(slovo7);
+					do Sys.wait(waitDuration);
+					let changeStupci = 7;
+				}
+				do Main.kbdProvjere(skupSlova);
+				if (stupCnt8 < 25 & changeStupci = 7){
+					do Main.padSlova8stup(slovo8);
+					do Sys.wait(waitDuration);
+					let changeStupci = 8;
+				}
+				do Main.kbdProvjere(skupSlova);
+				if (stupCnt9 < 25 & changeStupci = 8){
+					do Main.padSlova9stup(slovo9);
+					do Sys.wait(waitDuration);
+					let changeStupci = 0;
+				}
+				do Main.kbdProvjere(skupSlova);
+				
+			}
+			do Main.gameOver();	
+		}
+		else {
+			do Main.initStaticVars();
+			do Main.start();
+			do Main.printUI();
+			do Main.printScore();
+			
+			while(GameLoopBool){
+				if (stupCnt1 < 25 & changeStupci = 0){
+					do Main.padSlova1stup(slovo1);
+					do Sys.wait(waitDuration);
+					let changeStupci = 1;
+				
+				}
+				//provjere izmedu za bolju responzivnost
+				do Main.kbdProvjere(skupSlova);
+				
+				if (stupCnt2 < 25 & changeStupci = 1){
+					do Main.padSlova2stup(slovo2);
+					do Sys.wait(waitDuration);
+					let changeStupci = 2;
+				}
+				do Main.kbdProvjere(skupSlova);
+				if (stupCnt3 < 25 & changeStupci = 2){
+					do Main.padSlova3stup(slovo3);
+					do Sys.wait(waitDuration);
+					let changeStupci = 3;
+				}
+				do Main.kbdProvjere(skupSlova);
+				if (stupCnt4 < 25 & changeStupci = 3){
+					do Main.padSlova4stup(slovo4);
+					do Sys.wait(waitDuration);
+					let changeStupci = 4;
+				}
+				do Main.kbdProvjere(skupSlova);
+				if (stupCnt5 < 25 & changeStupci = 4){
+					do Main.padSlova5stup(slovo5);
+					do Sys.wait(waitDuration);
+					let changeStupci = 5;
+				}
+				do Main.kbdProvjere(skupSlova);
+				if (stupCnt6 < 25 & changeStupci = 5){
+					do Main.padSlova6stup(slovo6);
+					do Sys.wait(waitDuration);
+					let changeStupci = 6;
+				}
+				do Main.kbdProvjere(skupSlova);
+				if (stupCnt7 < 25 & changeStupci = 6){
+					do Main.padSlova7stup(slovo7);
+					do Sys.wait(waitDuration);
+					let changeStupci = 7;
+				}
+				do Main.kbdProvjere(skupSlova);
+				if (stupCnt8 < 25 & changeStupci = 7){
+					do Main.padSlova8stup(slovo8);
+					do Sys.wait(waitDuration);
+					let changeStupci = 8;
+				}
+				do Main.kbdProvjere(skupSlova);
+				if (stupCnt9 < 25 & changeStupci = 8){
+					do Main.padSlova9stup(slovo9);
+					do Sys.wait(waitDuration);
+					let changeStupci = 0;
+				}
+				do Main.kbdProvjere(skupSlova);
+				
+			}
+			do Main.gameOver();
+		}
+		
+		return;
+	}
+
+	function void main()
+	{	
+		do Main.initStaticVars();
+		do Main.loadingScreen();
+		do Main.start();
+		do Main.printUI();
+		do Main.printScore();
+	
+		while(GameLoopBool){
+		
+			if (stupCnt1 < 25 & changeStupci = 0){
+				do Main.padSlova1stup(slovo1);
+				do Sys.wait(waitDuration);
+				let changeStupci = 1;
+			
+			}
+			//provjere izmedu za bolju responzivnost
+			do Main.kbdProvjere(skupSlova);
+			
+			if (stupCnt2 < 25 & changeStupci = 1){
+				do Main.padSlova2stup(slovo2);
+				do Sys.wait(waitDuration);
+				let changeStupci = 2;
+			}
+			do Main.kbdProvjere(skupSlova);
+			if (stupCnt3 < 25 & changeStupci = 2){
+				do Main.padSlova3stup(slovo3);
+				do Sys.wait(waitDuration);
+				let changeStupci = 3;
+			}
+			do Main.kbdProvjere(skupSlova);
+			if (stupCnt4 < 25 & changeStupci = 3){
+				do Main.padSlova4stup(slovo4);
+				do Sys.wait(waitDuration);
+				let changeStupci = 4;
+			}
+			do Main.kbdProvjere(skupSlova);
+			if (stupCnt5 < 25 & changeStupci = 4){
+				do Main.padSlova5stup(slovo5);
+				do Sys.wait(waitDuration);
+				let changeStupci = 5;
+			}
+			do Main.kbdProvjere(skupSlova);
+			if (stupCnt6 < 25 & changeStupci = 5){
+				do Main.padSlova6stup(slovo6);
+				do Sys.wait(waitDuration);
+				let changeStupci = 6;
+			}
+			do Main.kbdProvjere(skupSlova);
+			if (stupCnt7 < 25 & changeStupci = 6){
+				do Main.padSlova7stup(slovo7);
+				do Sys.wait(waitDuration);
+				let changeStupci = 7;
+			}
+			do Main.kbdProvjere(skupSlova);
+			if (stupCnt8 < 25 & changeStupci = 7){
+				do Main.padSlova8stup(slovo8);
+				do Sys.wait(waitDuration);
+				let changeStupci = 8;
+			}
+			do Main.kbdProvjere(skupSlova);
+			if (stupCnt9 < 25 & changeStupci = 8){
+				do Main.padSlova9stup(slovo9);
+				do Sys.wait(waitDuration);
+				let changeStupci = 0;
+			}
+			do Main.kbdProvjere(skupSlova);
+			
+		}
+	
+		do Main.gameOver();
+		
+		return;
+	}
+}

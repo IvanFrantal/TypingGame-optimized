@@ -1,0 +1,32 @@
+	class GUI {
+	
+	function void easterEgg()
+	{
+		do Output.moveCursor(1,25);
+		do Output.printString("CESTITAM!");
+		do Output.moveCursor(4,17);
+		do Output.printString("Pronasli ste smajlica Jozu.");
+		do Output.moveCursor(6,17);
+		do Output.printString("Nadam se da uzivate u igri.");
+		
+		do Sys.wait(3000);
+		
+		do Screen.drawRectangle(190, 130, 230, 155);
+		do Screen.drawRectangle(270, 130, 310, 155);
+		do Screen.drawRectangle(230, 205, 270, 230);
+		do Sys.wait(500);
+		do Screen.drawRectangle(190, 205, 230, 230);
+		do Screen.drawRectangle(270, 205, 310, 230);
+		do Sys.wait(500);
+		do Screen.drawRectangle(150, 205, 190, 230);
+		do Screen.drawRectangle(310, 205, 350, 230);
+		do Sys.wait(500);
+		do Screen.drawRectangle(150, 180, 190, 205);
+		do Screen.drawRectangle(310, 180, 350, 205);
+		
+		do Sys.wait(2500); 
+		
+		return;
+	}
+	
+}
