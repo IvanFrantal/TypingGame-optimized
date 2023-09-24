@@ -3,5 +3,10 @@ Ideje za update:
 Proširivanje funkcionalnosti igre
   - Nakon skupljenih 50 bodova da se jedan obrisani
     kvadratic vrati nazad i tako za svakih novo
-    skupljenih 50 bodova
+    skupljenih 50 bodova [izazovno]
+  - Dodati i treći red kvadratića jer mislim da imaš
+    dovoljno memorije za takav podhvat.
+    (waitDuration nije potrebno smanjivati jer ćeš
+    imati problem sa sporim hvatanjem inputa zbog
+    sys.wait() funkcije.) [trivijalno]
   - ...
