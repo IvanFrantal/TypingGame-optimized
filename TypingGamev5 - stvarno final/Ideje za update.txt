@@ -11,5 +11,5 @@ Proširivanje funkcionalnosti igre
     sys.wait() funkcije.) [trivijalno za napraviti]
     ((kod za stavranje kvadratica je napravljen tako da
     je vrlo lako dodavati jos kvadratica samo sto je 
-    potrebno puno copy paste-a))
+    potrebno puno copy paste-a u f-jama padSlovaXstup))
   - ...
